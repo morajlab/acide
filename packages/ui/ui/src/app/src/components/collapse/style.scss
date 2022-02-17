@@ -1,0 +1,83 @@
+@import 'mo/style/common';
+
+$collapse__extra: #{$collapse}__extra;
+
+#{$collapse} {
+  background-color: var(--sideBar-background);
+  color: var(--sideBar-foreground);
+  height: 100%;
+  position: relative;
+
+  &:focus-within {
+    #{$collapse__extra} {
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--sideBarSectionHeader-border);
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+    overflow: hidden;
+    position: absolute;
+    transition: top ease-in-out 0.2s, height ease-in-out 0.2s;
+    width: 100%;
+
+    &:hover {
+      #{$collapse__extra} {
+        opacity: 1;
+      }
+    }
+
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    height: 25px;
+    outline: none;
+    padding: 1px 2px;
+    user-select: none;
+
+    &:focus {
+      border-color: var(--list-focusOutline);
+    }
+
+    &__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__extra {
+    margin: 0 0 0 auto;
+    opacity: 0;
+
+    #{$actionBar}__label.codicon {
+      height: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__content {
+    border: 1px solid transparent;
+
+    &:not(:empty) {
+      flex: 1;
+    }
+
+    &:focus {
+      border-color: var(--list-focusOutline);
+    }
+  }
+}
