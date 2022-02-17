@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ui-ui',
+  displayName: 'ui',
   preset: '../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',

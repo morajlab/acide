@@ -2,10 +2,7 @@
   "name": "acide",
   "version": "0.0.102-alpha",
   "license": "MIT",
-  "scripts": {
-    "test": "mjw test",
-    "prepare": "mjw hook --install"
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "core-js": "^3.6.5",

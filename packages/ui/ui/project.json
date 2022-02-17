@@ -43,12 +43,12 @@
     "serve": {
       "executor": "@nrwl/web:dev-server",
       "options": {
-        "buildTarget": "ui-ui:build",
+        "buildTarget": "ui:build",
         "hmr": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "ui-ui:build:production",
+          "buildTarget": "ui:build:production",
           "hmr": false
         }
       }
@@ -88,7 +88,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "uiFramework": "@storybook/react",
-        "outputPath": "dist/storybook/ui-ui",
+        "outputPath": "dist/storybook/ui",
         "config": {
           "configFolder": "packages/ui/ui/.storybook"
         }
