@@ -14,12 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@acide/app-ui": ["libs/app-ui/src/index.ts"],
-      "@acide/morajlab.fluent-app-ui-kit": [
-        "libs/morajlab.fluent-app-ui-kit/index.ts"
-      ]
-    }
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"]
 }

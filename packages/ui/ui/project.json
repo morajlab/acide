@@ -1,0 +1,104 @@
+{
+  "root": "packages/ui/ui",
+  "sourceRoot": "packages/ui/ui/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/packages/ui/ui",
+        "index": "packages/ui/ui/src/index.html",
+        "baseHref": "/",
+        "main": "packages/ui/ui/src/main.tsx",
+        "polyfills": "packages/ui/ui/src/polyfills.ts",
+        "tsConfig": "packages/ui/ui/tsconfig.app.json",
+        "assets": [
+          "packages/ui/ui/src/favicon.ico",
+          "packages/ui/ui/src/assets"
+        ],
+        "styles": ["packages/ui/ui/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "packages/ui/ui/src/environments/environment.ts",
+              "with": "packages/ui/ui/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "ui-ui:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "ui-ui:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/ui/ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ui/ui"],
+      "options": {
+        "jestConfig": "packages/ui/ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/react",
+        "port": 4400,
+        "config": {
+          "configFolder": "packages/ui/ui/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "outputPath": "dist/storybook/ui-ui",
+        "config": {
+          "configFolder": "packages/ui/ui/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

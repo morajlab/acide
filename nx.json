@@ -1,31 +1,41 @@
 {
-  "implicitDependencies": {
-    "workspace.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
-    "tsconfig.base.json": "*",
-    "tslint.json": "*",
-    ".eslintrc.json": "*",
-    "nx.json": "*"
-  },
-  "affected": { "defaultBase": "master" },
+  "extends": "@nrwl/workspace/presets/core.json",
   "npmScope": "acide",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "OGU5MjQ3MDUtMGUyMi00Yjc1LTlkODktYTAyNWIyZDFlMmUyfHJlYWQtd3JpdGU=",
-        "canTrackAnalytics": false,
-        "showUsageWarnings": true
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
-  "projects": {
-    "app-ui": { "tags": [] },
-    "website": { "tags": [] },
-    "website-e2e": { "tags": [], "implicitDependencies": ["website"] },
-    "ide": { "tags": [] },
-    "ide-e2e": { "tags": [], "implicitDependencies": ["ide"] },
-    "morajlab.fluent-app-ui-kit": { "tags": [] }
-  }
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "css",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "ui-ui"
 }
