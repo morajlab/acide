@@ -1,14 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+//import styles from './app.module.css';
+import { MoleculeProvider, Workbench } from '@dtinsight/molecule';
+import '@dtinsight/molecule/esm/style/mo.css';
 
-export function App() {
-  return (
-    <>
-      <NxWelcome title="ui-ui" />
-      <div />
-    </>
-  );
-}
+export const App = () => (
+  <MoleculeProvider extensions={[]}>
+    <Workbench />
+  </MoleculeProvider>
+);
 
 export default App;
