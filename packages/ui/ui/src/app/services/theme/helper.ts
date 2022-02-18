@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
-import { IColors, IColorTheme } from 'mo/model/colorTheme';
-import { getBuiltInColors } from 'mo/services/theme/colorRegistry';
+import { IColors, IColorTheme } from '@acide/ui/app/model/colorTheme';
+import { getBuiltInColors } from '@acide/ui/app/services/theme/colorRegistry';
 import { editor as MonacoEditor } from 'monaco-editor';
 
 /**

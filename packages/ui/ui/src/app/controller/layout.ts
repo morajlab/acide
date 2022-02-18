@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { container, singleton } from 'tsyringe';
-import { Controller } from 'mo/react/controller';
-import { ILayoutService, LayoutService } from 'mo/services';
+import { Controller } from '@acide/ui/app/react/controller';
+import { ILayoutService, LayoutService } from '@acide/ui/app/services';
 
 export interface ILayoutController extends Partial<Controller> {
   onPaneSizeChange?: (splitPanePos: string[]) => void;

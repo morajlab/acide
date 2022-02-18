@@ -1,4 +1,4 @@
-import { IExtension, IContributeType } from 'mo/model/extension';
+import { IExtension, IContributeType } from '@acide/ui/app/model/extension';
 
 const koKR = require('./locales/ko-KR.json');
 const zhCN = require('./locales/zh-CN.json');

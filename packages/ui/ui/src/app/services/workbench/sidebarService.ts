@@ -1,15 +1,15 @@
 import 'reflect-metadata';
-import { Component } from 'mo/react';
+import { Component } from '@acide/ui/app/react';
 import cloneDeep from 'lodash/cloneDeep';
 import { singleton, container } from 'tsyringe';
 import {
   ISidebar,
   ISidebarPane,
   SidebarModel,
-} from 'mo/model/workbench/sidebar';
-import { searchById } from 'mo/common/utils';
-import logger from 'mo/common/logger';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/model/workbench/sidebar';
+import { searchById } from '@acide/ui/app/common/utils';
+import logger from '@acide/ui/app/common/logger';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface ISidebarService extends Component<ISidebar> {
   /**

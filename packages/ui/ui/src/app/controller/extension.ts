@@ -1,25 +1,25 @@
 import 'reflect-metadata';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
 import {
   BuiltinService,
   IBuiltinService,
   IExtensionService,
-} from 'mo/services';
-import { ExtensionService } from 'mo/services/extensionService';
-import { CommandQuickAccessViewAction } from 'mo/monaco/quickAccessViewAction';
-import { SelectColorThemeAction } from 'mo/monaco/selectColorThemeAction';
-import { QuickAccessSettings } from 'mo/monaco/quickAccessSettingsAction';
-import { SelectLocaleAction } from 'mo/i18n/selectLocaleAction';
-import { CommandQuickSideBarViewAction } from 'mo/monaco/quickToggleSideBarAction';
-import { ID_SIDE_BAR } from 'mo/common/id';
-import { QuickTogglePanelAction } from 'mo/monaco/quickTogglePanelAction';
-import { QuickSelectAllAction } from 'mo/monaco/quickSelectAllAction';
-import { QuickCopyLineUp } from 'mo/monaco/quickCopyLineUp';
-import { QuickUndo } from 'mo/monaco/quickUndo';
-import { QuickRedo } from 'mo/monaco/quickRedo';
-import { QuickCreateFile } from 'mo/monaco/quickCreateFile';
-import type { Action2 } from 'mo/monaco/action';
+} from '@acide/ui/app/services';
+import { ExtensionService } from '@acide/ui/app/services/extensionService';
+import { CommandQuickAccessViewAction } from '@acide/ui/app/monaco/quickAccessViewAction';
+import { SelectColorThemeAction } from '@acide/ui/app/monaco/selectColorThemeAction';
+import { QuickAccessSettings } from '@acide/ui/app/monaco/quickAccessSettingsAction';
+import { SelectLocaleAction } from '@acide/ui/app/i18n/selectLocaleAction';
+import { CommandQuickSideBarViewAction } from '@acide/ui/app/monaco/quickToggleSideBarAction';
+import { ID_SIDE_BAR } from '@acide/ui/app/common/id';
+import { QuickTogglePanelAction } from '@acide/ui/app/monaco/quickTogglePanelAction';
+import { QuickSelectAllAction } from '@acide/ui/app/monaco/quickSelectAllAction';
+import { QuickCopyLineUp } from '@acide/ui/app/monaco/quickCopyLineUp';
+import { QuickUndo } from '@acide/ui/app/monaco/quickUndo';
+import { QuickRedo } from '@acide/ui/app/monaco/quickRedo';
+import { QuickCreateFile } from '@acide/ui/app/monaco/quickCreateFile';
+import type { Action2 } from '@acide/ui/app/monaco/action';
 
 export interface IExtensionController extends Partial<Controller> {}
 

@@ -1,7 +1,10 @@
 import { ResolvedKeybindingItem } from 'monaco-editor/esm/vs/platform/keybinding/common/resolvedKeybindingItem';
 import { KeybindingsRegistry } from 'monaco-editor/esm/vs/platform/keybinding/common/keybindingsRegistry';
 import { Utils } from '@dtinsight/dt-utils/lib';
-import { ISimpleKeybinding, KeyCodeString } from 'mo/model/keybinding';
+import {
+  ISimpleKeybinding,
+  KeyCodeString,
+} from '@acide/ui/app/model/keybinding';
 export interface IKeybinding {
   _isMac: boolean;
   /**

@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
-import { connect } from 'mo/react';
+import { connect } from '@acide/ui/app/react';
 import { StatusBar } from './statusBar';
-import { StatusBarService } from 'mo/services';
-import { StatusBarController } from 'mo/controller/statusBar';
+import { StatusBarService } from '@acide/ui/app/services';
+import { StatusBarController } from '@acide/ui/app/controller/statusBar';
 
 export * from './statusBar';
 export * from './item';

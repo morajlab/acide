@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
-import { getBEMElement, prefixClaName } from 'mo/common/className';
-import TreeView from 'mo/components/tree';
-import { localize } from 'mo/i18n/localize';
-import { Icon, Scrollable } from 'mo/components';
-import { IProblems, MarkerSeverity } from 'mo/model';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
+import TreeView from '@acide/ui/app/components/tree';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { Icon, Scrollable } from '@acide/ui/app/components';
+import { IProblems, MarkerSeverity } from '@acide/ui/app/model';
 
 const defaultClassName = prefixClaName('problems');
 const treeClassName = getBEMElement(defaultClassName, 'treeview');

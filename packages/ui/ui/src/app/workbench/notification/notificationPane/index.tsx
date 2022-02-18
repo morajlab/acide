@@ -1,16 +1,16 @@
 import React, { memo } from 'react';
-import { INotification } from 'mo/model/notification';
-import { INotificationController } from 'mo/controller/notification';
+import { INotification } from '@acide/ui/app/model/notification';
+import { INotificationController } from '@acide/ui/app/controller/notification';
 import {
   classNames,
   getBEMElement,
   getBEMModifier,
   prefixClaName,
-} from 'mo/common/className';
-import { ActionBar } from 'mo/components/actionBar';
-import { shadowClassName } from 'mo/components/contextView/base';
-import { Icon } from 'mo/components/icon';
-import { localize } from 'mo/i18n/localize';
+} from '@acide/ui/app/common/className';
+import { ActionBar } from '@acide/ui/app/components/actionBar';
+import { shadowClassName } from '@acide/ui/app/components/contextView/base';
+import { Icon } from '@acide/ui/app/components/icon';
+import { localize } from '@acide/ui/app/i18n/localize';
 
 export const defaultNotificationClassName = prefixClaName('notification');
 const notificationHeaderClassName = getBEMElement(

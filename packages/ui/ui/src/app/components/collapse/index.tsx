@@ -1,10 +1,10 @@
 import React, { useRef, useLayoutEffect, useEffect, useCallback } from 'react';
 import { useState } from 'react';
-import Logger from 'mo/common/logger';
-import { Toolbar } from 'mo/components/toolbar';
-import { Icon } from 'mo/components/icon';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { classNames } from 'mo/common/className';
+import Logger from '@acide/ui/app/common/logger';
+import { Toolbar } from '@acide/ui/app/components/toolbar';
+import { Icon } from '@acide/ui/app/components/icon';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { classNames } from '@acide/ui/app/common/className';
 import {
   defaultCollapseClassName,
   collapseItemClassName,
@@ -14,8 +14,8 @@ import {
   collapseContentClassName,
   collapseTitleClassName,
 } from './base';
-import { getDataAttributionsFromProps, select } from 'mo/common/dom';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
+import { getDataAttributionsFromProps, select } from '@acide/ui/app/common/dom';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
 
 type RenderFunctionProps = (data: ICollapseItem) => React.ReactNode;
 export interface ICollapseItem extends HTMLElementProps {

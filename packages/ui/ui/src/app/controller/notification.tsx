@@ -1,12 +1,12 @@
 import 'reflect-metadata';
 import { container, singleton } from 'tsyringe';
 import React from 'react';
-import { connect } from 'mo/react';
-import { Float, IStatusBarItem } from 'mo/model';
-import { Controller } from 'mo/react/controller';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { INotificationItem } from 'mo/model/notification';
-import { NotificationStatusBarView } from 'mo/workbench/notification';
+import { connect } from '@acide/ui/app/react';
+import { Float, IStatusBarItem } from '@acide/ui/app/model';
+import { Controller } from '@acide/ui/app/react/controller';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { INotificationItem } from '@acide/ui/app/model/notification';
+import { NotificationStatusBarView } from '@acide/ui/app/workbench/notification';
 import {
   IStatusBarService,
   StatusBarService,
@@ -14,7 +14,7 @@ import {
   NotificationService,
   IBuiltinService,
   BuiltinService,
-} from 'mo/services';
+} from '@acide/ui/app/services';
 
 export interface INotificationController extends Partial<Controller> {
   onCloseNotification(item: INotificationItem): void;

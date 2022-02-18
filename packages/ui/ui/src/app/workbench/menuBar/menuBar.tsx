@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useRef } from 'react';
-import { getBEMElement, prefixClaName } from 'mo/common/className';
-import { IMenuBar, IMenuBarItem } from 'mo/model/workbench/menuBar';
-import { IMenuBarController } from 'mo/controller/menuBar';
-import { DropDown, DropDownRef } from 'mo/components/dropdown';
-import { IMenuProps, Menu } from 'mo/components/menu';
-import { Icon } from 'mo/components/icon';
-import { KeybindingHelper } from 'mo/services/keybinding';
-import { MenuBarMode } from 'mo/model/workbench/layout';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
+import { IMenuBar, IMenuBarItem } from '@acide/ui/app/model/workbench/menuBar';
+import { IMenuBarController } from '@acide/ui/app/controller/menuBar';
+import { DropDown, DropDownRef } from '@acide/ui/app/components/dropdown';
+import { IMenuProps, Menu } from '@acide/ui/app/components/menu';
+import { Icon } from '@acide/ui/app/components/icon';
+import { KeybindingHelper } from '@acide/ui/app/services/keybinding';
+import { MenuBarMode } from '@acide/ui/app/model/workbench/layout';
 import { HorizontalView } from './horizontalView';
 
 export const defaultClassName = prefixClaName('menuBar');

@@ -2,7 +2,7 @@ import React from 'react';
 import RcTooltip from 'rc-tooltip';
 import 'rc-tooltip/assets/bootstrap.css';
 import type { TooltipProps } from 'rc-tooltip/lib/Tooltip';
-import { classNames, getFontInMac } from 'mo/common/className';
+import { classNames, getFontInMac } from '@acide/ui/app/common/className';
 
 export interface IToolTipProps extends TooltipProps {}
 

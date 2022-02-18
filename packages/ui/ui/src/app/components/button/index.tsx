@@ -1,5 +1,9 @@
 import React from 'react';
-import { classNames, getBEMModifier, prefixClaName } from 'mo/common/className';
+import {
+  classNames,
+  getBEMModifier,
+  prefixClaName,
+} from '@acide/ui/app/common/className';
 
 type BtnSizeType = 'normal' | 'large';
 export interface IButtonProps extends React.ComponentProps<'a'> {

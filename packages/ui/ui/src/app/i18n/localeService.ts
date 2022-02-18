@@ -1,12 +1,12 @@
-import { APP_PREFIX } from 'mo/common/const';
+import { APP_PREFIX } from '@acide/ui/app/common/const';
 import {
   ILocale,
   LocalizationEvent,
   BuiltInLocales,
   BuiltInDefault,
-} from 'mo/i18n/localization';
+} from '@acide/ui/app/i18n/localization';
 
-import { Component } from 'mo/react';
+import { Component } from '@acide/ui/app/react';
 import { singleton } from 'tsyringe';
 
 export interface ILocaleService {

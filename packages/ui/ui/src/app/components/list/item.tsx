@@ -1,6 +1,10 @@
 import React from 'react';
-import { classNames, getBEMElement, getBEMModifier } from 'mo/common/className';
-import type { UniqueId } from 'mo/common/types';
+import {
+  classNames,
+  getBEMElement,
+  getBEMModifier,
+} from '@acide/ui/app/common/className';
+import type { UniqueId } from '@acide/ui/app/common/types';
 import { defaultListClassName } from './list';
 
 export interface IItemProps extends Omit<React.ComponentProps<'li'>, 'id'> {

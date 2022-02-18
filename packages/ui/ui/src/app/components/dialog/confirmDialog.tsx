@@ -1,5 +1,5 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import {
   confirmClassName,
   containerConfirmClassName,

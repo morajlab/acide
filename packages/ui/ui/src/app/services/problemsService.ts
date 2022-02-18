@@ -4,19 +4,19 @@ import {
   IProblemsItem,
   ProblemsModel,
   MarkerSeverity,
-} from 'mo/model/problems';
-import { IStatusBarItem } from 'mo/model/workbench/statusBar';
+} from '@acide/ui/app/model/problems';
+import { IStatusBarItem } from '@acide/ui/app/model/workbench/statusBar';
 import {
   StatusBarService,
   IStatusBarService,
   IBuiltinService,
   BuiltinService,
-} from 'mo/services';
-import { Component } from 'mo/react';
+} from '@acide/ui/app/services';
+import { Component } from '@acide/ui/app/react';
 import { singleton, container } from 'tsyringe';
-import { searchById } from 'mo/common/utils';
-import logger from 'mo/common/logger';
-import type { UniqueId } from 'mo/common/types';
+import { searchById } from '@acide/ui/app/common/utils';
+import logger from '@acide/ui/app/common/logger';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IProblemsService extends Component<IProblems> {
   /**

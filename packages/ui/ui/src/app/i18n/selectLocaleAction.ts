@@ -9,9 +9,9 @@ import { ServicesAccessor } from 'monaco-editor/esm/vs/platform/instantiation/co
 import { localize } from './localize';
 import { ILocaleService, LocaleService } from './localeService';
 import { ILocale } from './localization';
-import { Action2 } from 'mo/monaco/action';
-import { KeyCode, KeyMod } from 'mo/monaco';
-import { constants } from 'mo/services/builtinService/const';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { KeyCode, KeyMod } from '@acide/ui/app/monaco';
+import { constants } from '@acide/ui/app/services/builtinService/const';
 
 export class SelectLocaleAction extends Action2 {
   static readonly ID = constants.ACTION_SELECT_LOCALE;

@@ -1,7 +1,10 @@
 import React from 'react';
 import { memo } from 'react';
 import { groupBreadcrumbClassName } from './base';
-import { Breadcrumb, IBreadcrumbItemProps } from 'mo/components/breadcrumb';
+import {
+  Breadcrumb,
+  IBreadcrumbItemProps,
+} from '@acide/ui/app/components/breadcrumb';
 
 export interface IEditorBreadcrumbProps {
   breadcrumbs?: IBreadcrumbItemProps[];

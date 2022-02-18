@@ -1,6 +1,6 @@
 import React from 'react';
-import { IMenuItemProps } from 'mo/components/menu';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
 
 export enum Float {
   left = 'left',

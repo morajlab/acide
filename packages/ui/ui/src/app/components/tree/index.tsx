@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback, useLayoutEffect } from 'react';
-import { Icon } from 'mo/components/icon';
+import { Icon } from '@acide/ui/app/components/icon';
 import { debounce } from 'lodash';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import TreeNode from './treeNode';
 import {
   activeTreeNodeClassName,
@@ -10,8 +10,8 @@ import {
   expandTreeNodeClassName,
   unexpandTreeNodeClassName,
 } from './base';
-import { TreeViewUtil } from 'mo/common/treeUtil';
-import type { UniqueId } from 'mo/common/types';
+import { TreeViewUtil } from '@acide/ui/app/common/treeUtil';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface ITreeNodeItemProps<T = any> {
   /**

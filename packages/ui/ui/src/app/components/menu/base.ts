@@ -2,7 +2,7 @@ import {
   getBEMElement,
   getBEMModifier,
   prefixClaName,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 
 export const defaultMenuClassName = prefixClaName('menu');
 export const defaultSubMenuClassName = prefixClaName('sub-menu');

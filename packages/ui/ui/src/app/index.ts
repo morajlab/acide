@@ -1,9 +1,9 @@
 import * as molecule from './molecule.api';
 
-export { MoleculeProvider } from 'mo/provider';
-export type { IMoleculeProps } from 'mo/provider';
+export { MoleculeProvider } from './provider';
+export type { IMoleculeProps } from './provider';
 
-export { Workbench } from 'mo/workbench/workbench';
+export { Workbench } from './workbench/workbench';
 export { molecule };
 
 export default molecule;

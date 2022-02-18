@@ -1,10 +1,10 @@
 import 'reflect-metadata';
-import { connect } from 'mo/react';
+import { connect } from '@acide/ui/app/react';
 
 import MenuBar from './menuBar';
-import { MenuBarService } from 'mo/services';
+import { MenuBarService } from '@acide/ui/app/services';
 import { container } from 'tsyringe';
-import { MenuBarController } from 'mo/controller/menuBar';
+import { MenuBarController } from '@acide/ui/app/controller/menuBar';
 
 const menuBarService = container.resolve(MenuBarService);
 const menuBarController = container.resolve(MenuBarController);

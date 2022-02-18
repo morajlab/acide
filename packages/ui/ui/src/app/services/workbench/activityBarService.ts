@@ -1,17 +1,17 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
-import { Component } from 'mo/react/component';
+import { Component } from '@acide/ui/app/react/component';
 import {
   ActivityBarModel,
   ActivityBarEvent,
   IActivityBar,
   IActivityBarItem,
-} from 'mo/model/workbench/activityBar';
-import { searchById } from 'mo/common/utils';
-import { IActivityMenuItemProps } from 'mo/model';
-import logger from 'mo/common/logger';
+} from '@acide/ui/app/model/workbench/activityBar';
+import { searchById } from '@acide/ui/app/common/utils';
+import { IActivityMenuItemProps } from '@acide/ui/app/model';
+import logger from '@acide/ui/app/common/logger';
 import { ISidebarService, SidebarService } from './sidebarService';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IActivityBarService extends Component<IActivityBar> {
   /**

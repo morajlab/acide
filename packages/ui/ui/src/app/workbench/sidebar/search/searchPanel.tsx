@@ -1,13 +1,13 @@
 import React from 'react';
-import { Toolbar } from 'mo/components/toolbar';
-import { classNames, prefixClaName } from 'mo/common/className';
-import { Header, Content } from 'mo/workbench/sidebar';
-import { Search } from 'mo/components/search';
-import type { SearchValues } from 'mo/components/search';
-import { ISearchProps } from 'mo/model/workbench/search';
+import { Toolbar } from '@acide/ui/app/components/toolbar';
+import { classNames, prefixClaName } from '@acide/ui/app/common/className';
+import { Header, Content } from '@acide/ui/app/workbench/sidebar';
+import { Search } from '@acide/ui/app/components/search';
+import type { SearchValues } from '@acide/ui/app/components/search';
+import { ISearchProps } from '@acide/ui/app/model/workbench/search';
 import SearchTree from './searchTree';
-import { localize } from 'mo/i18n/localize';
-import { ISearchController } from 'mo/controller';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { ISearchController } from '@acide/ui/app/controller';
 import {
   deleteSearchValueClassName,
   emptyTextValueClassName,

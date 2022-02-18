@@ -1,6 +1,6 @@
 import React from 'react';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import type { UniqueId } from 'mo/common/types';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export enum ExplorerEvent {
   onClick = 'explorer.onClick',

@@ -1,5 +1,5 @@
 import cloneDeep from 'lodash/cloneDeep';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 import logger from './logger';
 
 interface IWithIdProps {

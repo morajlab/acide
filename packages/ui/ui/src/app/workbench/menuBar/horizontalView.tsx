@@ -3,9 +3,14 @@ import {
   getBEMElement,
   prefixClaName,
   getBEMModifier,
-} from 'mo/common/className';
-import { IMenuBarItem } from 'mo/model/workbench/menuBar';
-import { Menu, MenuMode, MenuRef, IMenuProps } from 'mo/components/menu';
+} from '@acide/ui/app/common/className';
+import { IMenuBarItem } from '@acide/ui/app/model/workbench/menuBar';
+import {
+  Menu,
+  MenuMode,
+  MenuRef,
+  IMenuProps,
+} from '@acide/ui/app/components/menu';
 import Logo from './logo';
 
 export const defaultClassName = prefixClaName('menuBar');

@@ -1,6 +1,6 @@
 import React from 'react';
-import { IMenuItemProps } from 'mo/components';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
+import { IMenuItemProps } from '@acide/ui/app/components';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
 /**
  * The activity bar event definition
  */

@@ -5,12 +5,12 @@ import React, {
   useImperativeHandle,
   forwardRef,
 } from 'react';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import { debounce } from 'lodash';
-import { mergeFunctions } from 'mo/common/utils';
-import { cloneReactChildren } from 'mo/react';
-import { em2Px } from 'mo/common/css';
-import { getRelativePosition, triggerEvent } from 'mo/common/dom';
+import { mergeFunctions } from '@acide/ui/app/common/utils';
+import { cloneReactChildren } from '@acide/ui/app/react';
+import { em2Px } from '@acide/ui/app/common/css';
+import { getRelativePosition, triggerEvent } from '@acide/ui/app/common/dom';
 
 import {
   activeClassName,

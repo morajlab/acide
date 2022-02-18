@@ -1,18 +1,18 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
-import { Component } from 'mo/react/component';
+import { Component } from '@acide/ui/app/react/component';
 import {
   IExplorerPanelItem,
   IExplorer,
   IExplorerModel,
   ExplorerEvent,
-} from 'mo/model/workbench/explorer/explorer';
+} from '@acide/ui/app/model/workbench/explorer/explorer';
 import cloneDeep from 'lodash/cloneDeep';
-import { IMenuItemProps } from 'mo/components/menu';
-import { searchById } from 'mo/common/utils';
-import { IActionBarItemProps } from 'mo/components';
-import logger from 'mo/common/logger';
-import type { UniqueId } from 'mo/common/types';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import { searchById } from '@acide/ui/app/common/utils';
+import { IActionBarItemProps } from '@acide/ui/app/components';
+import logger from '@acide/ui/app/common/logger';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IExplorerService extends Component<IExplorer> {
   /**

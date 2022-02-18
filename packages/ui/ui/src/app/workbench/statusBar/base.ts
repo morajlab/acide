@@ -1,5 +1,5 @@
-import { getBEMElement, prefixClaName } from 'mo/common/className';
-import { IStatusBarItem } from 'mo/model';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
+import { IStatusBarItem } from '@acide/ui/app/model';
 
 export const statusBarClassName = prefixClaName('statusBar');
 export const leftItemsClassName = getBEMElement(

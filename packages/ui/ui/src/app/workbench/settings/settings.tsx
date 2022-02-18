@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-import { prefixClaName } from 'mo/common/className';
+import { prefixClaName } from '@acide/ui/app/common/className';
 
 const defaultClassName = prefixClaName('settings');
 

@@ -1,5 +1,8 @@
-import { localize } from 'mo/i18n/localize';
-import type { IActionBarItemProps, IMenuItemProps } from 'mo/components';
+import { localize } from '@acide/ui/app/i18n/localize';
+import type {
+  IActionBarItemProps,
+  IMenuItemProps,
+} from '@acide/ui/app/components';
 import type {
   IActivityBarItem,
   IActivityMenuItemProps,
@@ -10,8 +13,8 @@ import type {
   IOutput,
   IPanelItem,
   IStatusBarItem,
-} from 'mo/model';
-import { ID_SIDE_BAR } from 'mo/common/id';
+} from '@acide/ui/app/model';
+import { ID_SIDE_BAR } from '@acide/ui/app/common/id';
 
 export const constants = {
   PANEL_PROBLEMS: 'panel.problems.title',

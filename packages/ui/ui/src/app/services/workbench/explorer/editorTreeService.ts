@@ -1,10 +1,14 @@
-import { IActionBarItemProps, IMenuItemProps, ITabProps } from 'mo/components';
-import { IEditor, IEditorTab } from 'mo/model';
-import { EditorTreeEvent } from 'mo/model/workbench/explorer/editorTree';
-import { Component } from 'mo/react';
-import { EditorService } from 'mo/services';
+import {
+  IActionBarItemProps,
+  IMenuItemProps,
+  ITabProps,
+} from '@acide/ui/app/components';
+import { IEditor, IEditorTab } from '@acide/ui/app/model';
+import { EditorTreeEvent } from '@acide/ui/app/model/workbench/explorer/editorTree';
+import { Component } from '@acide/ui/app/react';
+import { EditorService } from '@acide/ui/app/services';
 import { container, singleton } from 'tsyringe';
-import { UniqueId } from 'mo/common/types';
+import { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IEditorTreeService extends Component<IEditor> {
   /**

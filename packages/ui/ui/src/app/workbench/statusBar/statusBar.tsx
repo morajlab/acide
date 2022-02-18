@@ -1,19 +1,22 @@
 import React from 'react';
 import { useEffect, useCallback } from 'react';
-import { IStatusBar, IStatusBarItem } from 'mo/model/workbench/statusBar';
+import {
+  IStatusBar,
+  IStatusBarItem,
+} from '@acide/ui/app/model/workbench/statusBar';
 import { StatusItem } from './item';
-import { mergeFunctions } from 'mo/common/utils';
-import { IStatusBarController } from 'mo/controller/statusBar';
+import { mergeFunctions } from '@acide/ui/app/common/utils';
+import { IStatusBarController } from '@acide/ui/app/controller/statusBar';
 import {
   leftItemsClassName,
   rightItemsClassName,
   sortByIndex,
   statusBarClassName,
 } from './base';
-import { useContextMenu } from 'mo/components/contextMenu';
-import { IMenuItemProps, Menu } from 'mo/components/menu';
-import { ID_STATUS_BAR } from 'mo/common/id';
-import { select } from 'mo/common/dom';
+import { useContextMenu } from '@acide/ui/app/components/contextMenu';
+import { IMenuItemProps, Menu } from '@acide/ui/app/components/menu';
+import { ID_STATUS_BAR } from '@acide/ui/app/common/id';
+import { select } from '@acide/ui/app/common/dom';
 
 export function StatusBar(props: IStatusBar & IStatusBarController) {
   const {

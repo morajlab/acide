@@ -1,9 +1,9 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
-import { IStatusBarItem } from 'mo/model/workbench/statusBar';
-import { IStatusBarController } from 'mo/controller/statusBar';
+import { classNames } from '@acide/ui/app/common/className';
+import { IStatusBarItem } from '@acide/ui/app/model/workbench/statusBar';
+import { IStatusBarController } from '@acide/ui/app/controller/statusBar';
 import { itemClassName } from './base';
-import { getDataAttributionsFromProps } from 'mo/common/dom';
+import { getDataAttributionsFromProps } from '@acide/ui/app/common/dom';
 
 export function StatusItem(props: IStatusBarItem & IStatusBarController) {
   const {

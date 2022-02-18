@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
 import cloneDeep from 'lodash/cloneDeep';
-import { Component } from 'mo/react';
+import { Component } from '@acide/ui/app/react';
 import {
   EditorModel,
   EditorGroupModel,
@@ -11,12 +11,12 @@ import {
   EditorEvent,
   IEditorActionsProps,
   IEditorOptions,
-} from 'mo/model';
-import { randomId, searchById } from 'mo/common/utils';
-import { editor as MonacoEditor, Uri } from 'mo/monaco';
-import { IMenuItemProps } from 'mo/components';
+} from '@acide/ui/app/model';
+import { randomId, searchById } from '@acide/ui/app/common/utils';
+import { editor as MonacoEditor, Uri } from '@acide/ui/app/monaco';
+import { IMenuItemProps } from '@acide/ui/app/components';
 import { ExplorerService, IExplorerService } from './explorer/explorerService';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IEditorService extends Component<IEditor> {
   /**

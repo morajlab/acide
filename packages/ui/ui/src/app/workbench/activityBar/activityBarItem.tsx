@@ -1,8 +1,8 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
-import { IActivityBarItem } from 'mo/model/workbench/activityBar';
-import { IMenuItemProps, Menu } from 'mo/components/menu';
-import { IActivityBarController } from 'mo/controller/activityBar';
+import { classNames } from '@acide/ui/app/common/className';
+import { IActivityBarItem } from '@acide/ui/app/model/workbench/activityBar';
+import { IMenuItemProps, Menu } from '@acide/ui/app/components/menu';
+import { IActivityBarController } from '@acide/ui/app/controller/activityBar';
 
 import {
   indicatorClassName,
@@ -11,8 +11,8 @@ import {
   itemCheckedClassName,
   itemDisabledClassName,
 } from './base';
-import { Icon, useContextView } from 'mo/components';
-import { KeybindingHelper } from 'mo/services/keybinding';
+import { Icon, useContextView } from '@acide/ui/app/components';
+import { KeybindingHelper } from '@acide/ui/app/services/keybinding';
 
 export function ActivityBarItem(
   props: IActivityBarItem & IActivityBarController

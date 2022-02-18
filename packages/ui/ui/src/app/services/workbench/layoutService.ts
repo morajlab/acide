@@ -1,13 +1,13 @@
 import { container, singleton } from 'tsyringe';
-import { Component } from 'mo/react';
-import { ID_APP } from 'mo/common/id';
+import { Component } from '@acide/ui/app/react';
+import { ID_APP } from '@acide/ui/app/common/id';
 import {
   ILayout,
   Position,
   LayoutModel,
   MenuBarMode,
-} from 'mo/model/workbench/layout';
-import { MenuBarEvent } from 'mo/model/workbench/menuBar';
+} from '@acide/ui/app/model/workbench/layout';
+import { MenuBarEvent } from '@acide/ui/app/model/workbench/menuBar';
 
 export interface ILayoutService extends Component<ILayout> {
   /**

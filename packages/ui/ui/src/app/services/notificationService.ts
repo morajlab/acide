@@ -4,13 +4,13 @@ import {
   INotificationItem,
   NotificationModel,
   NotificationStatus,
-} from 'mo/model/notification';
-import { Component } from 'mo/react';
+} from '@acide/ui/app/model/notification';
+import { Component } from '@acide/ui/app/react';
 import { singleton, container } from 'tsyringe';
-import { randomId, searchById } from 'mo/common/utils';
-import logger from 'mo/common/logger';
+import { randomId, searchById } from '@acide/ui/app/common/utils';
+import logger from '@acide/ui/app/common/logger';
 import { cloneDeep } from 'lodash';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface INotificationService extends Component<INotification> {
   /**

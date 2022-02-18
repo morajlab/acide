@@ -1,4 +1,4 @@
-import logger from 'mo/common/logger';
+import logger from '@acide/ui/app/common/logger';
 import 'reflect-metadata';
 import { cloneDeep } from 'lodash';
 import { singleton } from 'tsyringe';

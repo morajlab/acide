@@ -25,13 +25,13 @@ import {
 } from 'monaco-editor/esm/vs/platform/actions/common/actions';
 import { stripIcons } from 'monaco-editor/esm/vs/base/common/iconLabels';
 
-import { KeyMod, KeyCode, editor as MonacoEditor } from 'mo/monaco';
-import { EditorService, IEditorService } from 'mo/services';
-import { constants } from 'mo/services/builtinService/const';
-import { Action2 } from 'mo/monaco/action';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { MonacoService } from 'mo/monaco/monacoService';
-import { registerQuickAccessProvider } from 'mo/monaco/quickAccessProvider';
+import { KeyMod, KeyCode, editor as MonacoEditor } from '@acide/ui/app/monaco';
+import { EditorService, IEditorService } from '@acide/ui/app/services';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { MonacoService } from '@acide/ui/app/monaco/monacoService';
+import { registerQuickAccessProvider } from '@acide/ui/app/monaco/quickAccessProvider';
 
 export class CommandQuickAccessProvider extends AbstractEditorCommandsQuickAccessProvider {
   static PREFIX = '>';

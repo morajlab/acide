@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { IEditorTreeController } from 'mo/controller';
-import { IEditor, IEditorGroup } from 'mo/model';
+import { IEditorTreeController } from '@acide/ui/app/controller';
+import { IEditor, IEditorGroup } from '@acide/ui/app/model';
 import {
   IActionBarItemProps,
   Icon,
@@ -10,7 +10,7 @@ import {
   Scrollable,
   Toolbar,
   useContextView,
-} from 'mo/components';
+} from '@acide/ui/app/components';
 import {
   editorTreeActiveItemClassName,
   editorTreeClassName,
@@ -21,17 +21,17 @@ import {
   editorTreeGroupClassName,
   editorTreeItemClassName,
 } from './base';
-import { classNames } from 'mo/common/className';
-import { getEventPosition } from 'mo/common/dom';
-import { localize } from 'mo/i18n/localize';
+import { classNames } from '@acide/ui/app/common/className';
+import { getEventPosition } from '@acide/ui/app/common/dom';
+import { localize } from '@acide/ui/app/i18n/localize';
 import {
   ICollapseItem,
   HEADER_HEIGTH,
   MAX_GROW_HEIGHT,
-} from 'mo/components/collapse';
+} from '@acide/ui/app/components/collapse';
 import Scrollbar from 'react-scrollbars-custom';
-import { constants } from 'mo/services/builtinService/const';
-import type { UniqueId } from 'mo/common/types';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 // override onContextMenu
 type UnionEditor = Omit<

@@ -1,8 +1,8 @@
-import type { UniqueId } from 'mo/common/types';
-import { IExtensionService } from 'mo/services';
+import type { UniqueId } from '@acide/ui/app/common/types';
+import { IExtensionService } from '@acide/ui/app/services';
 import { IColorTheme } from './colorTheme';
 import { IIconTheme } from './iconTheme';
-import { ILocale } from 'mo/i18n';
+import { ILocale } from '@acide/ui/app/i18n';
 
 /**
  * Defines extension types

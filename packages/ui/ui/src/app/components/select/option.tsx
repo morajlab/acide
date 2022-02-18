@@ -1,6 +1,10 @@
 import React from 'react';
 import { ComponentProps } from 'react';
-import { classNames, getBEMElement, getBEMModifier } from 'mo/common/className';
+import {
+  classNames,
+  getBEMElement,
+  getBEMModifier,
+} from '@acide/ui/app/common/className';
 
 import { selectClassName } from './select';
 

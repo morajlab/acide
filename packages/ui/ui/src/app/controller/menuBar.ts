@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import { container, singleton } from 'tsyringe';
-import { IActivityBarItem, IMenuBarItem } from 'mo/model';
-import { MenuBarEvent } from 'mo/model/workbench/menuBar';
-import { MenuBarMode } from 'mo/model/workbench/layout';
-import { Controller } from 'mo/react/controller';
+import { IActivityBarItem, IMenuBarItem } from '@acide/ui/app/model';
+import { MenuBarEvent } from '@acide/ui/app/model/workbench/menuBar';
+import { MenuBarMode } from '@acide/ui/app/model/workbench/layout';
+import { Controller } from '@acide/ui/app/react/controller';
 import {
   IMenuBarService,
   ILayoutService,
@@ -13,12 +13,15 @@ import {
   BuiltinService,
   ActivityBarService,
   IActivityBarService,
-} from 'mo/services';
-import { ID_APP, ID_SIDE_BAR } from 'mo/common/id';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
-import { CommandQuickSideBarViewAction } from 'mo/monaco/quickToggleSideBarAction';
-import { QuickTogglePanelAction } from 'mo/monaco/quickTogglePanelAction';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/services';
+import { ID_APP, ID_SIDE_BAR } from '@acide/ui/app/common/id';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
+import { CommandQuickSideBarViewAction } from '@acide/ui/app/monaco/quickToggleSideBarAction';
+import { QuickTogglePanelAction } from '@acide/ui/app/monaco/quickTogglePanelAction';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IMenuBarController extends Partial<Controller> {
   onSelect?: (key: UniqueId, item?: IActivityBarItem) => void;

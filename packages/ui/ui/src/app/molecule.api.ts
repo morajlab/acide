@@ -1,16 +1,16 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
 
-export * as event from 'mo/common/event';
-export * as react from 'mo/react';
-export * as component from 'mo/components';
-export * as monaco from 'mo/monaco/api';
+export * as event from './common/event';
+export * as react from './react';
+export * as component from './components';
+export * as monaco from './monaco/api';
 
-export * from 'mo/i18n';
-export * from 'mo/workbench';
-export * from 'mo/services';
+export * from './i18n';
+export * from './workbench';
+export * from './services';
 
-export * as model from 'mo/model';
+export * as model from './model';
 
 import {
   ILayoutService,
@@ -46,9 +46,9 @@ import {
   BuiltinService,
   ExtensionService,
   IExtensionService,
-} from 'mo/services';
+} from './services';
 
-import { ILocaleService, LocaleService } from 'mo/i18n';
+import { ILocaleService, LocaleService } from './i18n';
 
 /**
  * The locale service

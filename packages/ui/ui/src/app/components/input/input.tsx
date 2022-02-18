@@ -1,6 +1,10 @@
 import React from 'react';
-import { classNames, prefixClaName, getBEMModifier } from 'mo/common/className';
-import { KeyCodes } from 'mo/common/keyCodes';
+import {
+  classNames,
+  prefixClaName,
+  getBEMModifier,
+} from '@acide/ui/app/common/className';
+import { KeyCodes } from '@acide/ui/app/common/keyCodes';
 
 import { TextArea } from './textArea';
 

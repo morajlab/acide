@@ -1,6 +1,6 @@
 import React from 'react';
-import { prefixClaName, classNames } from 'mo/common/className';
-import { ActionBar, IActionBarProps } from 'mo/components/actionBar';
+import { prefixClaName, classNames } from '@acide/ui/app/common/className';
+import { ActionBar, IActionBarProps } from '@acide/ui/app/components/actionBar';
 
 export interface IToolbarProps<T = any> extends IActionBarProps {}
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import {
   getRelativePosition,
   select,
   HTMLElementType,
   IPosition,
-} from 'mo/common/dom';
-import { EventEmitter } from 'mo/common/event';
+} from '@acide/ui/app/common/dom';
+import { EventEmitter } from '@acide/ui/app/common/event';
 import { Utils } from '@dtinsight/dt-utils';
 
 import {

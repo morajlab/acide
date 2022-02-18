@@ -1,7 +1,7 @@
 /**
  * Builtin colors
  */
-import { IColorTheme } from 'mo/model/colorTheme';
+import { IColorTheme } from '@acide/ui/app/model/colorTheme';
 import { Color } from 'monaco-editor/esm/vs/base/common/color';
 
 const defaultVS = {

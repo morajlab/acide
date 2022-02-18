@@ -1,6 +1,9 @@
 import React from 'react';
-import { HTMLElementType } from 'mo/common/dom';
-import { IContextView, useContextView } from 'mo/components/contextView';
+import { HTMLElementType } from '@acide/ui/app/common/dom';
+import {
+  IContextView,
+  useContextView,
+} from '@acide/ui/app/components/contextView';
 
 export interface IContextMenuProps {
   anchor: HTMLElementType;

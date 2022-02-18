@@ -1,12 +1,12 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
 
-import { localize } from 'mo/i18n/localize';
-import { EditorService, IEditorService } from 'mo/services';
-import { constants } from 'mo/services/builtinService/const';
-import { KeyMod, KeyCode } from 'mo/monaco';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { Action2 } from 'mo/monaco/action';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { EditorService, IEditorService } from '@acide/ui/app/services';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { Action2 } from '@acide/ui/app/monaco/action';
 
 export class QuickSelectAllAction extends Action2 {
   static readonly ID = constants.ACTION_QUICK_SELECT_ALL;

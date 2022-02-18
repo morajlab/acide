@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
 import React from 'react';
 import {
@@ -7,7 +7,7 @@ import {
   ExplorerService,
   IBuiltinService,
   IExplorerService,
-} from 'mo/services';
+} from '@acide/ui/app/services';
 
 export interface IOutlineController extends Partial<Controller> {}
 

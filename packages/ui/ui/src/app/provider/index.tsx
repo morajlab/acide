@@ -1,1 +1,1 @@
-export * from 'mo/provider/molecule';
+export * from '@acide/ui/app/provider/molecule';

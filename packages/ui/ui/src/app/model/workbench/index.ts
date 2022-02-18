@@ -1,4 +1,10 @@
-import { IActivityBar, IMenuBar, IPanel, ISidebar, IStatusBar } from 'mo/model';
+import {
+  IActivityBar,
+  IMenuBar,
+  IPanel,
+  ISidebar,
+  IStatusBar,
+} from '@acide/ui/app/model';
 
 export * from './activityBar';
 export * from './editor';

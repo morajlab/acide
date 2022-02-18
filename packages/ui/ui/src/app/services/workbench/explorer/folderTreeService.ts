@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
 import cloneDeep from 'lodash/cloneDeep';
-import { Component } from 'mo/react/component';
+import { Component } from '@acide/ui/app/react/component';
 import {
   FileTypes,
   FileType,
@@ -10,13 +10,13 @@ import {
   IFolderTreeModel,
   IFolderTreeSubItem,
   IFolderTreeNodeProps,
-} from 'mo/model/workbench/explorer/folderTree';
+} from '@acide/ui/app/model/workbench/explorer/folderTree';
 import { TreeViewUtil } from '../../../common/treeUtil';
 import { ExplorerService, IExplorerService } from './explorerService';
-import { IMenuItemProps } from 'mo/components';
-import logger from 'mo/common/logger';
-import { BuiltinService, IBuiltinService } from 'mo/services';
-import type { UniqueId } from 'mo/common/types';
+import { IMenuItemProps } from '@acide/ui/app/components';
+import logger from '@acide/ui/app/common/logger';
+import { BuiltinService, IBuiltinService } from '@acide/ui/app/services';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IFolderTreeService extends Component<IFolderTree> {
   /**

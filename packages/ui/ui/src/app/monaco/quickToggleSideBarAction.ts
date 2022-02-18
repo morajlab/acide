@@ -3,8 +3,8 @@ import { container } from 'tsyringe';
 import { ServicesAccessor } from 'monaco-editor/esm/vs/platform/instantiation/common/instantiation';
 import { KeyChord } from 'monaco-editor/esm/vs/base/common/keyCodes';
 
-import { localize } from 'mo/i18n/localize';
-import { KeyMod, KeyCode } from 'mo/monaco';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
 import {
   ActivityBarService,
   IActivityBarService,
@@ -14,11 +14,11 @@ import {
   LayoutService,
   MenuBarService,
   SidebarService,
-} from 'mo/services';
-import { ID_SIDE_BAR } from 'mo/common/id';
-import type { UniqueId } from 'mo/common/types';
-import { Action2 } from 'mo/monaco/action';
-import { CATEGORIES, KeybindingWeight } from 'mo/monaco/common';
+} from '@acide/ui/app/services';
+import { ID_SIDE_BAR } from '@acide/ui/app/common/id';
+import type { UniqueId } from '@acide/ui/app/common/types';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { CATEGORIES, KeybindingWeight } from '@acide/ui/app/monaco/common';
 
 export class CommandQuickSideBarViewAction extends Action2 {
   static readonly ID = ID_SIDE_BAR;

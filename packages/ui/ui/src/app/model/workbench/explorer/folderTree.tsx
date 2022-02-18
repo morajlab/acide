@@ -1,8 +1,8 @@
 import React from 'react';
 import 'reflect-metadata';
-import type { ITreeNodeItemProps } from 'mo/components/tree';
-import type { IMenuItemProps } from 'mo/components/menu';
-import type { UniqueId } from 'mo/common/types';
+import type { ITreeNodeItemProps } from '@acide/ui/app/components/tree';
+import type { IMenuItemProps } from '@acide/ui/app/components/menu';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export enum FileTypes {
   File = 'File',

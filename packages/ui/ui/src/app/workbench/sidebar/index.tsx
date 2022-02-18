@@ -1,10 +1,10 @@
 import 'reflect-metadata';
 export * from './sidebar';
 import { Sidebar } from './sidebar';
-import { connect } from 'mo/react';
-import { SidebarService } from 'mo/services';
+import { connect } from '@acide/ui/app/react';
+import { SidebarService } from '@acide/ui/app/services';
 import { container } from 'tsyringe';
-import { SidebarController } from 'mo/controller/sidebar';
+import { SidebarController } from '@acide/ui/app/controller/sidebar';
 
 const sidebarService = container.resolve(SidebarService);
 const sidebarController = container.resolve(SidebarController);

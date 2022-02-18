@@ -1,5 +1,8 @@
 import React, { useState, useRef } from 'react';
-import { ActionBar, IActionBarItemProps } from 'mo/components/actionBar';
+import {
+  ActionBar,
+  IActionBarItemProps,
+} from '@acide/ui/app/components/actionBar';
 import {
   inputGroupClassName,
   searchToolBarClassName,
@@ -8,7 +11,7 @@ import {
   validationInfoInputClassName,
   validationWarningInputClassName,
 } from './base';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 
 export enum InfoTypeEnums {
   info = 'info',

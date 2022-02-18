@@ -1,7 +1,7 @@
 import React from 'react';
-import { ISubMenuProps } from 'mo/components/menu/subMenu';
-import { IMenuItemProps } from 'mo/components/menu';
-import type { UniqueId } from 'mo/common/types';
+import { ISubMenuProps } from '@acide/ui/app/components/menu/subMenu';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import type { UniqueId } from '@acide/ui/app/common/types';
 import { MenuBarMode } from './layout';
 /**
  * The activity bar event definition

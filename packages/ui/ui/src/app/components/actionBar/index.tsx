@@ -5,14 +5,17 @@ import {
   classNames,
   getBEMElement,
   getBEMModifier,
-} from 'mo/common/className';
-import { IContextMenu, useContextMenu } from 'mo/components/contextMenu';
-import { IMenuItemProps, Menu } from 'mo/components/menu';
-import { mergeFunctions } from 'mo/common/utils';
+} from '@acide/ui/app/common/className';
+import {
+  IContextMenu,
+  useContextMenu,
+} from '@acide/ui/app/components/contextMenu';
+import { IMenuItemProps, Menu } from '@acide/ui/app/components/menu';
+import { mergeFunctions } from '@acide/ui/app/common/utils';
 import Tooltip from '../tooltip';
 import { Icon } from '../icon';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
-import { getDataAttributionsFromProps } from 'mo/common/dom';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
+import { getDataAttributionsFromProps } from '@acide/ui/app/common/dom';
 
 export interface IActionBarItemProps<T = any> {
   id: UniqueId;

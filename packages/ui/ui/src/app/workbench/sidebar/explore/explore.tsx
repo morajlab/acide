@@ -1,11 +1,11 @@
 import React from 'react';
-import { Collapse } from 'mo/components/collapse';
-import { Header, Content } from 'mo/workbench/sidebar';
-import { IExplorer } from 'mo/model/workbench/explorer/explorer';
-import { IExplorerController } from 'mo/controller/explorer/explorer';
-import { Toolbar } from 'mo/components/toolbar';
+import { Collapse } from '@acide/ui/app/components/collapse';
+import { Header, Content } from '@acide/ui/app/workbench/sidebar';
+import { IExplorer } from '@acide/ui/app/model/workbench/explorer/explorer';
+import { IExplorerController } from '@acide/ui/app/controller/explorer/explorer';
+import { Toolbar } from '@acide/ui/app/components/toolbar';
 import { defaultExplorerClassName } from './base';
-import { localize } from 'mo/i18n/localize';
+import { localize } from '@acide/ui/app/i18n/localize';
 
 type IExplorerProps = IExplorer & IExplorerController;
 

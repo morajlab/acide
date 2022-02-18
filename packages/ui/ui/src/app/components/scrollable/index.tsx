@@ -1,7 +1,7 @@
 import React, { forwardRef, useRef, useImperativeHandle } from 'react';
 import { useCallback, useMemo, useState } from 'react';
 import { Scrollbar, ScrollbarProps } from 'react-scrollbars-custom';
-import { prefixClaName, classNames } from 'mo/common/className';
+import { prefixClaName, classNames } from '@acide/ui/app/common/className';
 export interface IScrollbarProps extends ScrollbarProps {
   isShowShadow?: boolean;
   trackStyle?: React.CSSProperties;

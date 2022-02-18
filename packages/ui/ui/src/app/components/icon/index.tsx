@@ -1,5 +1,5 @@
 import React from 'react';
-import { classNames, prefixClaName } from 'mo/common/className';
+import { classNames, prefixClaName } from '@acide/ui/app/common/className';
 import '@vscode/codicons/dist/codicon.css';
 import { ComponentProps } from 'react';
 

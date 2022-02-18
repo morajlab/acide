@@ -1,6 +1,6 @@
-import { localize } from 'mo/i18n/localize';
-import { constants } from 'mo/services/builtinService/const';
-import { KeybindingHelper } from 'mo/services/keybinding';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { KeybindingHelper } from '@acide/ui/app/services/keybinding';
 import { useEffect, useState } from 'react';
 
 const KEYBINDINGS = () => [

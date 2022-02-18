@@ -1,7 +1,7 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
-import { TriggerEvent } from 'mo/common/dom';
-import { Icon } from 'mo/components/icon';
+import { classNames } from '@acide/ui/app/common/className';
+import { TriggerEvent } from '@acide/ui/app/common/dom';
+import { Icon } from '@acide/ui/app/components/icon';
 
 import { Menu } from './menu';
 import { IMenuItemProps } from './menuItem';

@@ -1,7 +1,7 @@
 import 'reflect-metadata';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
-import { ISidebarService, SidebarService } from 'mo/services';
+import { ISidebarService, SidebarService } from '@acide/ui/app/services';
 
 export interface ISideBarController extends Partial<Controller> {}
 

@@ -1,4 +1,4 @@
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import React from 'react';
 import {
   defaultDividerClassName,

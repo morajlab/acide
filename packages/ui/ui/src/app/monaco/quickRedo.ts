@@ -1,12 +1,17 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
 
-import { localize } from 'mo/i18n/localize';
-import { KeyMod, KeyCode, Uri, editor as MonacoEditor } from 'mo/monaco';
-import { EditorService, IEditorService } from 'mo/services';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { Action2 } from 'mo/monaco/action';
-import { constants } from 'mo/services/builtinService/const';
+import { localize } from '@acide/ui/app/i18n/localize';
+import {
+  KeyMod,
+  KeyCode,
+  Uri,
+  editor as MonacoEditor,
+} from '@acide/ui/app/monaco';
+import { EditorService, IEditorService } from '@acide/ui/app/services';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { constants } from '@acide/ui/app/services/builtinService/const';
 
 export class QuickRedo extends Action2 {
   static readonly ID = constants.ACTION_QUICK_REDO;

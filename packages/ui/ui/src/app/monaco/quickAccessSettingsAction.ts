@@ -4,11 +4,11 @@ import { localize } from 'monaco-editor/esm/vs/nls';
 import { KeyChord } from 'monaco-editor/esm/vs/base/common/keyCodes';
 import { ServicesAccessor } from 'monaco-editor/esm/vs/platform/instantiation/common/instantiation';
 
-import { KeyMod, KeyCode } from 'mo/monaco';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { Action2 } from 'mo/monaco/action';
-import { constants } from 'mo/services/builtinService/const';
-import { ISettingsService, SettingsService } from 'mo/services';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { ISettingsService, SettingsService } from '@acide/ui/app/services';
 
 export class QuickAccessSettings extends Action2 {
   static readonly ID = constants.ACTION_QUICK_ACCESS_SETTINGS;

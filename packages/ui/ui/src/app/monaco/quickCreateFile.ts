@@ -4,13 +4,13 @@ import { container } from 'tsyringe';
 import {
   IFolderTreeController,
   FolderTreeController,
-} from 'mo/controller/explorer/folderTree';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { constants } from 'mo/services/builtinService/const';
-import { Action2 } from 'mo/monaco/action';
-import { localize } from 'mo/i18n/localize';
-import { KeyMod, KeyCode } from 'mo/monaco';
-import { FileTypes } from 'mo/model';
+} from '@acide/ui/app/controller/explorer/folderTree';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
+import { FileTypes } from '@acide/ui/app/model';
 
 export class QuickCreateFile extends Action2 {
   static readonly ID = constants.ACTION_QUICK_CREATE_FILE;

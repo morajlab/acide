@@ -1,17 +1,17 @@
 import 'reflect-metadata';
 import React from 'react';
-import { IStatusBarItem, StatusBarEvent } from 'mo/model';
-import { Controller } from 'mo/react/controller';
-import { MenuBarController } from 'mo/controller';
-import { IMenuItemProps } from 'mo/components/menu';
+import { IStatusBarItem, StatusBarEvent } from '@acide/ui/app/model';
+import { Controller } from '@acide/ui/app/react/controller';
+import { MenuBarController } from '@acide/ui/app/controller';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
 import { container, singleton } from 'tsyringe';
 import {
   BuiltinService,
   IBuiltinService,
   IStatusBarService,
   StatusBarService,
-} from 'mo/services';
-import { EditorStatusBarView } from 'mo/workbench/editor';
+} from '@acide/ui/app/services';
+import { EditorStatusBarView } from '@acide/ui/app/workbench/editor';
 import { cloneDeep } from 'lodash';
 
 export interface IStatusBarController extends Partial<Controller> {

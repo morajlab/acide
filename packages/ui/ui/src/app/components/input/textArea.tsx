@@ -4,7 +4,11 @@ import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import { useEffect, useRef } from 'react';
 import { omit } from 'lodash';
 
-import { classNames, getBEMElement, getBEMModifier } from 'mo/common/className';
+import {
+  classNames,
+  getBEMElement,
+  getBEMModifier,
+} from '@acide/ui/app/common/className';
 import { fixControlledValue, inputClassName, resolveOnChange } from './input';
 
 export interface ITextAreaProps extends TextAreaProps {

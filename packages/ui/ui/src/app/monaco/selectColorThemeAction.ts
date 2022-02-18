@@ -8,12 +8,12 @@ import {
 import { KeyChord } from 'monaco-editor/esm/vs/base/common/keyCodes';
 import { ServicesAccessor } from 'monaco-editor/esm/vs/platform/instantiation/common/instantiation';
 
-import { KeyMod, KeyCode } from 'mo/monaco';
-import { Action2 } from 'mo/monaco/action';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { IColorTheme } from 'mo/model/colorTheme';
-import { constants } from 'mo/services/builtinService/const';
-import { ColorThemeService, IColorThemeService } from 'mo/services';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
+import { Action2 } from '@acide/ui/app/monaco/action';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { IColorTheme } from '@acide/ui/app/model/colorTheme';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { ColorThemeService, IColorThemeService } from '@acide/ui/app/services';
 
 export class SelectColorThemeAction extends Action2 {
   static readonly ID = constants.ACTION_SELECT_THEME;

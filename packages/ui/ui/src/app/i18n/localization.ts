@@ -1,4 +1,7 @@
-export { BuiltInLocales, BuiltInDefault } from 'mo/extensions/locales-defaults';
+export {
+  BuiltInLocales,
+  BuiltInDefault,
+} from '@acide/ui/app/extensions/locales-defaults';
 /**
  * The Localization configuration event definition
  */

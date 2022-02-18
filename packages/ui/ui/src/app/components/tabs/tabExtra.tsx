@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getBEMElement } from 'mo/common/className';
+import { getBEMElement } from '@acide/ui/app/common/className';
 
 interface ITabExtraProps {
   classNames?: string;

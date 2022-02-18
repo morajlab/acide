@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import { connect } from 'mo/react';
+import { connect } from '@acide/ui/app/react';
 import { container } from 'tsyringe';
-import { EditorController } from 'mo/controller/editor';
+import { EditorController } from '@acide/ui/app/controller/editor';
 import { Editor } from './editor';
-import { EditorService } from 'mo/services';
+import { EditorService } from '@acide/ui/app/services';
 
 const editorService = container.resolve(EditorService);
 import { EditorStatusBarView } from './statusBarView';

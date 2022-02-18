@@ -11,10 +11,13 @@ import {
   classNames,
   getBEMElement,
   getBEMModifier,
-} from 'mo/common/className';
-import { cloneReactChildren } from 'mo/react';
-import { getAttr } from 'mo/common/dom';
-import { IContextView, useContextView } from 'mo/components/contextView';
+} from '@acide/ui/app/common/className';
+import { cloneReactChildren } from '@acide/ui/app/react';
+import { getAttr } from '@acide/ui/app/common/dom';
+import {
+  IContextView,
+  useContextView,
+} from '@acide/ui/app/components/contextView';
 
 import { ISelectOptionProps } from './option';
 import { Icon } from '../icon';

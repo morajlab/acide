@@ -1,20 +1,27 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
-import { ErrorMsg } from 'mo/common/error';
-import { IContribute, IContributeType, IExtension } from 'mo/model/extension';
-import { IColorTheme } from 'mo/model/colorTheme';
-import { ILocaleService, LocaleService, ILocale } from 'mo/i18n';
-import logger from 'mo/common/logger';
+import { ErrorMsg } from '@acide/ui/app/common/error';
+import {
+  IContribute,
+  IContributeType,
+  IExtension,
+} from '@acide/ui/app/model/extension';
+import { IColorTheme } from '@acide/ui/app/model/colorTheme';
+import { ILocaleService, LocaleService, ILocale } from '@acide/ui/app/i18n';
+import logger from '@acide/ui/app/common/logger';
 import {
   ColorThemeService,
   IColorThemeService,
 } from './theme/colorThemeService';
-import { IDisposable } from 'mo/monaco/common';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
+import { IDisposable } from '@acide/ui/app/monaco/common';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
 
-import { searchById } from 'mo/common/utils';
-import type { UniqueId } from 'mo/common/types';
-import { Action2, registerAction2 } from 'mo/monaco/action';
+import { searchById } from '@acide/ui/app/common/utils';
+import type { UniqueId } from '@acide/ui/app/common/types';
+import { Action2, registerAction2 } from '@acide/ui/app/monaco/action';
 
 export interface IExtensionService {
   /**

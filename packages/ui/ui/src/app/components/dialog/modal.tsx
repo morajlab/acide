@@ -2,15 +2,15 @@ import React, { useEffect } from 'react';
 import Dialog from 'rc-dialog';
 import { IDialogPropTypes } from 'rc-dialog/lib/IDialogPropTypes';
 
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import {
   modalClassName,
   closeDialogDescriptorClassName,
   wrapDialogClassName,
 } from './base';
 import { ConfrimType } from './';
-import { Icon } from 'mo/components/icon';
-import { Button, IButtonProps } from 'mo/components/button';
+import { Icon } from '@acide/ui/app/components/icon';
+import { Button, IButtonProps } from '@acide/ui/app/components/button';
 
 export interface IModalProps extends IDialogPropTypes {
   onOk?: (e: React.MouseEvent<HTMLElement>) => void;

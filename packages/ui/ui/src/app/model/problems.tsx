@@ -1,5 +1,5 @@
-import type { UniqueId } from 'mo/common/types';
-import { ITreeNodeItemProps } from 'mo/components';
+import type { UniqueId } from '@acide/ui/app/common/types';
+import { ITreeNodeItemProps } from '@acide/ui/app/components';
 
 export enum MarkerSeverity {
   Hint = 1,

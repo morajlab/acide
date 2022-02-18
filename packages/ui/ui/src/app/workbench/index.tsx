@@ -1,12 +1,12 @@
 export { WorkbenchView as Workbench } from './workbench';
-export { ActivityBar } from 'mo/workbench/activityBar';
-export { ActivityBarItem } from 'mo/workbench/activityBar/activityBarItem';
-export { Editor } from 'mo/workbench/editor/editor';
-export { EditorGroup } from 'mo/workbench/editor/group';
-export { MenuBar } from 'mo/workbench/menuBar/menuBar';
-export { Panel } from 'mo/workbench/panel/panel';
-export { Sidebar } from 'mo/workbench/sidebar';
-export { StatusBar, StatusItem } from 'mo/workbench/statusBar';
+export { ActivityBar } from './activityBar';
+export { ActivityBarItem } from './activityBar/activityBarItem';
+export { Editor } from './editor/editor';
+export { EditorGroup } from './editor/group';
+export { MenuBar } from './menuBar/menuBar';
+export { Panel } from './panel/panel';
+export { Sidebar } from './sidebar';
+export { StatusBar, StatusItem } from './statusBar';
 
 export type {
   IWorkbench,
@@ -23,7 +23,7 @@ export type {
   IProblemsItem,
   INotification,
   INotificationItem,
-} from 'mo/model';
+} from '../model';
 
 export type {
   IActivityBarController,
@@ -36,4 +36,4 @@ export type {
   IPanelController,
   IProblemsController,
   IStatusBarController,
-} from 'mo/controller';
+} from '../controller';

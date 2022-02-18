@@ -3,8 +3,11 @@ import React from 'react';
 import { PureComponent } from 'react';
 import { editor } from 'monaco-editor';
 import { isEqual } from 'lodash';
-import { APP_PREFIX } from 'mo/common/const';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
+import { APP_PREFIX } from '@acide/ui/app/common/const';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
 import { container } from 'tsyringe';
 
 export const SYMBOL_MONACO_EDITOR = `${APP_PREFIX}-monaco-editor`;

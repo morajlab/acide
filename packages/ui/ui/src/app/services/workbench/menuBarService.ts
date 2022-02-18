@@ -1,15 +1,15 @@
 import 'reflect-metadata';
 import { cloneDeep } from 'lodash';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 import {
   IMenuBar,
   IMenuBarItem,
   MenuBarModel,
-} from 'mo/model/workbench/menuBar';
-import { MenuBarEvent } from 'mo/model/workbench/menuBar';
-import { Component } from 'mo/react';
+} from '@acide/ui/app/model/workbench/menuBar';
+import { MenuBarEvent } from '@acide/ui/app/model/workbench/menuBar';
+import { Component } from '@acide/ui/app/react';
 import { singleton, container } from 'tsyringe';
-import logger from 'mo/common/logger';
+import logger from '@acide/ui/app/common/logger';
 
 export interface IMenuBarService extends Component<IMenuBar> {
   /**

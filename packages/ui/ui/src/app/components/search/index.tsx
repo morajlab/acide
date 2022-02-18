@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { IActionBarItemProps } from '../actionBar';
 import Input, { InfoTypeEnum, InfoTypeEnums } from './input';
-import { classNames } from 'mo/common/className';
+import { classNames } from '@acide/ui/app/common/className';
 import {
   baseInputClassName,
   defaultSearchClassName,

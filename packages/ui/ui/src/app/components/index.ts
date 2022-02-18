@@ -1,10 +1,10 @@
-export { ActionBar } from 'mo/components/actionBar';
+export { ActionBar } from '@acide/ui/app/components/actionBar';
 
 export type {
   ActionBarItem,
   IActionBarProps,
   IActionBarItemProps,
-} from 'mo/components/actionBar';
+} from '@acide/ui/app/components/actionBar';
 
 export { Breadcrumb } from './breadcrumb';
 

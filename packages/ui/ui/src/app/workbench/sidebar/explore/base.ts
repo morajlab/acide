@@ -2,14 +2,14 @@ import {
   getBEMElement,
   getBEMModifier,
   prefixClaName,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 import {
   ID_ACTIVITY_BAR,
   ID_SIDE_BAR,
   ID_EXPLORER,
   ID_FOLDER_TREE,
   ID_EDITOR_TREE,
-} from 'mo/common/id';
+} from '@acide/ui/app/common/id';
 
 const defaultClassName = prefixClaName(ID_SIDE_BAR);
 const defaultExplorerClassName = prefixClaName(ID_EXPLORER, defaultClassName);

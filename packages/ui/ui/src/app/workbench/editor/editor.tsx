@@ -2,13 +2,13 @@ import React from 'react';
 import { memo } from 'react';
 import SplitPane from 'react-split-pane';
 import Pane from 'react-split-pane/lib/Pane';
-import { IEditor, IEditorGroup } from 'mo/model';
+import { IEditor, IEditorGroup } from '@acide/ui/app/model';
 
 import EditorGroup from './group';
 import Welcome from './welcome';
 import { defaultEditorClassName } from './base';
-import { IEditorController } from 'mo/controller/editor';
-import type { UniqueId } from 'mo/common/types';
+import { IEditorController } from '@acide/ui/app/controller/editor';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export function Editor(props: IEditor & IEditorController) {
   const {

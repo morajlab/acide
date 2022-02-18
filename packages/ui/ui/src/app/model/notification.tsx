@@ -1,5 +1,5 @@
-import { UniqueId } from 'mo/common/types';
-import { IActionBarItemProps } from 'mo/components/actionBar';
+import { UniqueId } from '@acide/ui/app/common/types';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
 import React from 'react';
 import type { IStatusBarItem } from './workbench/statusBar';
 

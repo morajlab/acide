@@ -1,16 +1,19 @@
 import 'reflect-metadata';
 import React from 'react';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
-import { connect } from 'mo/react';
-import { Explorer, FolderTreeView } from 'mo/workbench/sidebar/explore';
-import { IMenuItemProps } from 'mo/components/menu';
+import { connect } from '@acide/ui/app/react';
+import {
+  Explorer,
+  FolderTreeView,
+} from '@acide/ui/app/workbench/sidebar/explore';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
 import {
   ExplorerEvent,
   IExplorerPanelItem,
-} from 'mo/model/workbench/explorer/explorer';
-import { FileTypes, EditorTreeEvent } from 'mo/model';
-import { IActionBarItemProps } from 'mo/components/actionBar';
+} from '@acide/ui/app/model/workbench/explorer/explorer';
+import { FileTypes, EditorTreeEvent } from '@acide/ui/app/model';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
 import {
   IExplorerService,
   ISidebarService,
@@ -20,7 +23,7 @@ import {
   ExplorerService,
   IBuiltinService,
   BuiltinService,
-} from 'mo/services';
+} from '@acide/ui/app/services';
 import { FolderTreeController, IFolderTreeController } from './folderTree';
 
 export interface IExplorerController extends Partial<Controller> {

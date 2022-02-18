@@ -10,25 +10,25 @@ import {
   prefixClaName,
   getBEMModifier,
   getBEMElement,
-} from 'mo/common/className';
+} from '../common/className';
 
-import { EditorView } from 'mo/workbench/editor';
-import { SidebarView } from 'mo/workbench/sidebar';
-import { MenuBarView } from 'mo/workbench/menuBar';
-import { ActivityBarView } from 'mo/workbench/activityBar';
-import { StatusBarView } from 'mo/workbench/statusBar';
-import { PanelView } from 'mo/workbench/panel';
-import { ID_APP } from 'mo/common/id';
-import { APP_PREFIX } from 'mo/common/const';
+import { EditorView } from './editor';
+import { SidebarView } from './sidebar';
+import { MenuBarView } from './menuBar';
+import { ActivityBarView } from './activityBar';
+import { StatusBarView } from './statusBar';
+import { PanelView } from './panel';
+import { ID_APP } from '../common/id';
+import { APP_PREFIX } from '../common/const';
 
-import { connect } from 'mo/react';
+import { connect } from '../react';
 
-import { ILayoutController, LayoutController } from 'mo/controller/layout';
-import { LayoutService } from 'mo/services';
-import { ILayout, MenuBarMode } from 'mo/model/workbench/layout';
+import { ILayoutController, LayoutController } from '../controller/layout';
+import { LayoutService } from '../services';
+import { ILayout, MenuBarMode } from '../model/workbench/layout';
 
-import { IWorkbench } from 'mo/model';
-import { Display } from 'mo/components';
+import { IWorkbench } from '../model';
+import { Display } from '../components';
 
 const mainBenchClassName = prefixClaName('mainBench');
 const workbenchClassName = prefixClaName('workbench');

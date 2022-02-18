@@ -1,10 +1,10 @@
 import 'reflect-metadata';
-import { connect } from 'mo/react';
+import { connect } from '@acide/ui/app/react';
 import { container } from 'tsyringe';
-import { FolderTreeService } from 'mo/services';
+import { FolderTreeService } from '@acide/ui/app/services';
 import { Explorer } from './explore';
 import FolderTree from './folderTree';
-import { FolderTreeController } from 'mo/controller/explorer/folderTree';
+import { FolderTreeController } from '@acide/ui/app/controller/explorer/folderTree';
 import { EditorTree } from './editorTree';
 
 const folderTreeService = container.resolve(FolderTreeService);

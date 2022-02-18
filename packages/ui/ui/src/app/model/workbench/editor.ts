@@ -1,9 +1,9 @@
-import { ITabProps } from 'mo/components/tabs/tab';
-import { ITabsProps } from 'mo/components/tabs';
-import { IMenuItemProps } from 'mo/components/menu';
-import { IBreadcrumbItemProps } from 'mo/components/breadcrumb';
+import { ITabProps } from '@acide/ui/app/components/tabs/tab';
+import { ITabsProps } from '@acide/ui/app/components/tabs';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import { IBreadcrumbItemProps } from '@acide/ui/app/components/breadcrumb';
 import { editor as MonacoEditor } from 'monaco-editor';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export enum EditorEvent {
   OnCloseTab = 'editor.closeTab',

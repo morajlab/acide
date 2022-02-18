@@ -1,6 +1,6 @@
-import { editor as MonacoEditor } from 'mo/monaco';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { ITabProps } from 'mo/components/tabs/tab';
+import { editor as MonacoEditor } from '@acide/ui/app/monaco';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { ITabProps } from '@acide/ui/app/components/tabs/tab';
 export interface IPanelItem<T = any> extends ITabProps<T> {
   /**
    * The same as HTMLElement title attribute

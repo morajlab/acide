@@ -1,6 +1,6 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
+import { classNames } from '@acide/ui/app/common/className';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
 
 import {
   checkClassName,

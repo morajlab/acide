@@ -1,6 +1,6 @@
-import { IExtension } from 'mo/model/extension';
-import { IExtensionService } from 'mo/services';
-import molecule from 'mo';
+import { IExtension } from '@acide/ui/app/model/extension';
+import { IExtensionService } from '@acide/ui/app/services';
+import molecule from '@acide/ui/app';
 
 export const ExtendsPanel: IExtension = {
   id: 'ExtendsPanel',

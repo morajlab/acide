@@ -1,5 +1,5 @@
-import molecule from 'mo';
-import { IExtension } from 'mo/model/extension';
+import molecule from '@acide/ui/app';
+import { IExtension } from '@acide/ui/app/model/extension';
 
 const removePanel = function (panel) {
   molecule.explorer.removePanel(panel.id);

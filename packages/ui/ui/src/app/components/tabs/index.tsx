@@ -10,10 +10,10 @@ import {
   getBEMElement,
   getBEMModifier,
   classNames,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 
 import { Tab, ITabProps } from './tab';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export type TabsType = 'line' | 'card';
 /**

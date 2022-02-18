@@ -1,12 +1,12 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
-import { localize } from 'mo/i18n/localize';
-import { KeyMod, KeyCode } from 'mo/monaco';
-import { EditorService, IEditorService } from 'mo/services';
+import { localize } from '@acide/ui/app/i18n/localize';
+import { KeyMod, KeyCode } from '@acide/ui/app/monaco';
+import { EditorService, IEditorService } from '@acide/ui/app/services';
 
-import { constants } from 'mo/services/builtinService/const';
-import { KeybindingWeight } from 'mo/monaco/common';
-import { Action2 } from 'mo/monaco/action';
+import { constants } from '@acide/ui/app/services/builtinService/const';
+import { KeybindingWeight } from '@acide/ui/app/monaco/common';
+import { Action2 } from '@acide/ui/app/monaco/action';
 
 export class QuickCopyLineUp extends Action2 {
   static readonly ID = constants.ACTION_QUICK_COPY_LINE_UP;

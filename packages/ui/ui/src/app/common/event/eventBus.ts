@@ -1,4 +1,4 @@
-import { EventEmitter } from 'mo/common/event/eventEmitter';
+import { EventEmitter } from '@acide/ui/app/common/event/eventEmitter';
 
 export const EventBus = new EventEmitter();
 

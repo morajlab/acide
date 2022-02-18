@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import React from 'react';
 import { container, singleton } from 'tsyringe';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { debounce } from 'lodash';
 
 import {
@@ -11,13 +11,16 @@ import {
   IEditorService,
   ISettingsService,
   SettingsService,
-} from 'mo/services';
-import { SettingsEvent } from 'mo/model/settings';
-import { ILocale, ILocaleService, LocaleService } from 'mo/i18n';
-import { INotificationService, NotificationService } from 'mo/services';
+} from '@acide/ui/app/services';
+import { SettingsEvent } from '@acide/ui/app/model/settings';
+import { ILocale, ILocaleService, LocaleService } from '@acide/ui/app/i18n';
+import {
+  INotificationService,
+  NotificationService,
+} from '@acide/ui/app/services';
 import { NotificationController } from '.';
-import { INotificationController } from 'mo/workbench';
-import { LocaleNotification } from 'mo/workbench/notification/notificationPane/localeNotification';
+import { INotificationController } from '@acide/ui/app/workbench';
+import { LocaleNotification } from '@acide/ui/app/workbench/notification/notificationPane/localeNotification';
 
 export interface ISettingsController extends Partial<Controller> {}
 

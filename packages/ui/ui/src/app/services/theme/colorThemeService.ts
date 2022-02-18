@@ -9,15 +9,15 @@ import {
   ColorThemeMode,
   ColorScheme,
   ColorThemeEvent,
-} from 'mo/model/colorTheme';
+} from '@acide/ui/app/model/colorTheme';
 import { singleton } from 'tsyringe';
-import { editor as monacoEditor } from 'mo/monaco';
-import { applyStyleSheetRules } from 'mo/common/css';
+import { editor as monacoEditor } from '@acide/ui/app/monaco';
+import { applyStyleSheetRules } from '@acide/ui/app/common/css';
 import { getThemeData, convertToCSSVars } from './helper';
-import logger from 'mo/common/logger';
-import { prefixClaName } from 'mo/common/className';
-import { searchById, colorLightOrDark } from 'mo/common/utils';
-import { GlobalEvent } from 'mo/common/event';
+import logger from '@acide/ui/app/common/logger';
+import { prefixClaName } from '@acide/ui/app/common/className';
+import { searchById, colorLightOrDark } from '@acide/ui/app/common/utils';
+import { GlobalEvent } from '@acide/ui/app/common/event';
 
 export interface IColorThemeService {
   /**

@@ -1,11 +1,11 @@
 import 'reflect-metadata';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
-import { connect } from 'mo/react';
+import { connect } from '@acide/ui/app/react';
 import React from 'react';
-import { SearchPanel } from 'mo/workbench/sidebar/search';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { SearchEvent } from 'mo/model/workbench/search';
+import { SearchPanel } from '@acide/ui/app/workbench/sidebar/search';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { SearchEvent } from '@acide/ui/app/model/workbench/search';
 import {
   ActivityBarService,
   BuiltinService,
@@ -15,8 +15,8 @@ import {
   ISidebarService,
   SearchService,
   SidebarService,
-} from 'mo/services';
-import { ISearchProps, ITreeNodeItemProps } from 'mo/components';
+} from '@acide/ui/app/services';
+import { ISearchProps, ITreeNodeItemProps } from '@acide/ui/app/components';
 
 export interface ISearchController extends Partial<Controller> {
   getSearchIndex?: (text: string, queryVal?: string) => number;

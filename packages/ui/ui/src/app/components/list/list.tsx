@@ -1,8 +1,12 @@
 import React from 'react';
-import { prefixClaName, classNames, getBEMModifier } from 'mo/common/className';
+import {
+  prefixClaName,
+  classNames,
+  getBEMModifier,
+} from '@acide/ui/app/common/className';
 import { ComponentProps, useEffect, useState } from 'react';
-import { cloneReactChildren } from 'mo/react';
-import type { UniqueId } from 'mo/common/types';
+import { cloneReactChildren } from '@acide/ui/app/react';
+import type { UniqueId } from '@acide/ui/app/common/types';
 import { IItemProps } from './item';
 
 export interface IListProps extends Omit<ComponentProps<'ul'>, 'onSelect'> {

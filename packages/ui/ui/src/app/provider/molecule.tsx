@@ -2,19 +2,22 @@ import 'reflect-metadata';
 import { container } from 'tsyringe';
 import React, { createContext, Component } from 'react';
 
-import { defaultExtensions } from 'mo/extensions';
-import { BuiltInId } from 'mo/extensions/locales-defaults';
-import { IExtension } from 'mo/model/extension';
+import { defaultExtensions } from '@acide/ui/app/extensions';
+import { BuiltInId } from '@acide/ui/app/extensions/locales-defaults';
+import { IExtension } from '@acide/ui/app/model/extension';
 import {
   ExtensionService,
   IExtensionService,
-} from 'mo/services/extensionService';
-import { LocaleService, ILocaleService } from 'mo/i18n';
-import { STORE_KEY, DEFAULT_LOCALE_ID } from 'mo/i18n/localeService';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
-import { ILayoutService, LayoutService } from 'mo/services';
-import * as controllers from 'mo/controller';
-import type { Controller } from 'mo/react';
+} from '@acide/ui/app/services/extensionService';
+import { LocaleService, ILocaleService } from '@acide/ui/app/i18n';
+import { STORE_KEY, DEFAULT_LOCALE_ID } from '@acide/ui/app/i18n/localeService';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
+import { ILayoutService, LayoutService } from '@acide/ui/app/services';
+import * as controllers from '@acide/ui/app/controller';
+import type { Controller } from '@acide/ui/app/react';
 
 export interface IMoleculeProps {
   /**

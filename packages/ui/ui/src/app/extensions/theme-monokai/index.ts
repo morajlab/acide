@@ -1,5 +1,5 @@
-import { IColorTheme } from 'mo/model/colorTheme';
-import { IExtension } from 'mo/model/extension';
+import { IColorTheme } from '@acide/ui/app/model/colorTheme';
+import { IExtension } from '@acide/ui/app/model/extension';
 
 const monokaiColorThemeExtension: IExtension = require('./package.json');
 

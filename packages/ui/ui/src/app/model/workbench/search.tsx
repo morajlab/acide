@@ -1,6 +1,6 @@
-import { ITreeNodeItemProps } from 'mo/components';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { InfoTypeEnum } from 'mo/components/search/input';
+import { ITreeNodeItemProps } from '@acide/ui/app/components';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { InfoTypeEnum } from '@acide/ui/app/components/search/input';
 
 export enum SearchEvent {
   onChange = 'search.onChange',

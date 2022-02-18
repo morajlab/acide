@@ -3,20 +3,24 @@ import { singleton, container } from 'tsyringe';
 import { editor as MonacoEditor } from 'monaco-editor';
 import { cloneDeepWith, cloneDeep } from 'lodash';
 import pickBy from 'lodash/pickBy';
-import { Component } from 'mo/react';
+import { Component } from '@acide/ui/app/react';
 import {
   IOutput,
   IPanel,
   IPanelItem,
   PanelEvent,
   PanelModel,
-} from 'mo/model/workbench/panel';
+} from '@acide/ui/app/model/workbench/panel';
 
-import { searchById } from 'mo/common/utils';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { BuiltinService, IBuiltinService, LayoutService } from 'mo/services';
-import logger from 'mo/common/logger';
-import type { UniqueId } from 'mo/common/types';
+import { searchById } from '@acide/ui/app/common/utils';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import {
+  BuiltinService,
+  IBuiltinService,
+  LayoutService,
+} from '@acide/ui/app/services';
+import logger from '@acide/ui/app/common/logger';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IPanelService extends Component<IPanel> {
   /**

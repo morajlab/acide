@@ -1,14 +1,14 @@
 import 'reflect-metadata';
 import { singleton, container } from 'tsyringe';
-import { Component } from 'mo/react/component';
+import { Component } from '@acide/ui/app/react/component';
 
 import {
   ISearchProps,
   SearchEvent,
   SearchModel,
-} from 'mo/model/workbench/search';
-import { ITreeNodeItemProps } from 'mo/components';
-import { searchById } from 'mo/common/utils';
+} from '@acide/ui/app/model/workbench/search';
+import { ITreeNodeItemProps } from '@acide/ui/app/components';
+import { searchById } from '@acide/ui/app/common/utils';
 import { BuiltinService, IBuiltinService } from '../builtinService';
 
 export interface ISearchService extends Component<ISearchProps> {

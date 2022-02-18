@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, IButtonProps } from 'mo/components/button';
+import { Button, IButtonProps } from '@acide/ui/app/components/button';
 export interface ActionButtonProps extends IButtonProps {
   actionFn?: (...args: any[]) => any | PromiseLike<any>;
   closeModal: Function;

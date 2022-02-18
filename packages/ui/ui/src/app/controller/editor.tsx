@@ -6,11 +6,11 @@ import {
   EditorEvent,
   IEditorTab,
   IEditorActionsProps,
-} from 'mo/model/workbench/editor';
-import { Controller } from 'mo/react/controller';
-import { IMenuItemProps } from 'mo/components/menu';
-import { IMonacoEditorProps } from 'mo/components/monaco';
-import { editor as MonacoEditor, Uri } from 'mo/monaco';
+} from '@acide/ui/app/model/workbench/editor';
+import { Controller } from '@acide/ui/app/react/controller';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import { IMonacoEditorProps } from '@acide/ui/app/components/monaco';
+import { editor as MonacoEditor, Uri } from '@acide/ui/app/monaco';
 
 import {
   BuiltinService,
@@ -19,8 +19,8 @@ import {
   IEditorService,
   IStatusBarService,
   StatusBarService,
-} from 'mo/services';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/services';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IEditorController extends Partial<Controller> {
   groupSplitPos?: string[];

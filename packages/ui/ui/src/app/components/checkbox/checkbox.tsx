@@ -1,7 +1,11 @@
 import React from 'react';
-import { prefixClaName, classNames, getBEMElement } from 'mo/common/className';
-import type { HTMLElementProps, UniqueId } from 'mo/common/types';
-import { getDataAttributionsFromProps } from 'mo/common/dom';
+import {
+  prefixClaName,
+  classNames,
+  getBEMElement,
+} from '@acide/ui/app/common/className';
+import type { HTMLElementProps, UniqueId } from '@acide/ui/app/common/types';
+import { getDataAttributionsFromProps } from '@acide/ui/app/common/dom';
 
 export interface ICheckboxProps extends HTMLElementProps {
   id: UniqueId;

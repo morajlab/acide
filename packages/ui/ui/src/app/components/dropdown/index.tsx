@@ -1,12 +1,16 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import { classNames, getBEMModifier, prefixClaName } from 'mo/common/className';
+import {
+  classNames,
+  getBEMModifier,
+  prefixClaName,
+} from '@acide/ui/app/common/className';
 import { useContextView } from '../contextView';
 import {
   triggerEvent,
   TriggerEvent,
   PlacementType,
   getPositionByPlacement,
-} from 'mo/common/dom';
+} from '@acide/ui/app/common/dom';
 
 export interface IDropDownProps extends React.ComponentProps<'div'> {
   overlay: React.ReactNode;

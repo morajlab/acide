@@ -1,17 +1,17 @@
 import React, { useRef } from 'react';
 import { memo } from 'react';
-import { Icon } from 'mo/components/icon';
-import { Menu } from 'mo/components/menu';
-import { DropDown, DropDownRef } from 'mo/components/dropdown';
-import { IEditorActionsProps, IEditorAction } from 'mo/model';
+import { Icon } from '@acide/ui/app/components/icon';
+import { Menu } from '@acide/ui/app/components/menu';
+import { DropDown, DropDownRef } from '@acide/ui/app/components/dropdown';
+import { IEditorActionsProps, IEditorAction } from '@acide/ui/app/model';
 import {
   groupActionItemDisabledClassName,
   groupActionsClassName,
   groupActionsItemClassName,
 } from './base';
-import { IEditorController } from 'mo/controller/editor';
-import { classNames } from 'mo/common/className';
-import Tooltip from 'mo/components/tooltip';
+import { IEditorController } from '@acide/ui/app/controller/editor';
+import { classNames } from '@acide/ui/app/common/className';
+import Tooltip from '@acide/ui/app/components/tooltip';
 
 export interface IEditorActionProps extends IEditorAction {
   isActiveGroup: boolean;

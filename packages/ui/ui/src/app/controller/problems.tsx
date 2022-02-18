@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import React from 'react';
-import { Float, IStatusBarItem } from 'mo/model';
-import { Controller } from 'mo/react/controller';
+import { Float, IStatusBarItem } from '@acide/ui/app/model';
+import { Controller } from '@acide/ui/app/react/controller';
 import {
   IPanelService,
   PanelService,
@@ -12,12 +12,18 @@ import {
   ProblemsService,
   IBuiltinService,
   BuiltinService,
-} from 'mo/services';
+} from '@acide/ui/app/services';
 import { singleton, container } from 'tsyringe';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
-import { QuickTogglePanelAction } from 'mo/monaco/quickTogglePanelAction';
-import { ProblemsPaneView, ProblemsStatusBarView } from 'mo/workbench/problems';
-import { connect } from 'mo/react';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
+import { QuickTogglePanelAction } from '@acide/ui/app/monaco/quickTogglePanelAction';
+import {
+  ProblemsPaneView,
+  ProblemsStatusBarView,
+} from '@acide/ui/app/workbench/problems';
+import { connect } from '@acide/ui/app/react';
 export interface IProblemsController extends Partial<Controller> {
   onClick?: (e: React.MouseEvent, item: IStatusBarItem) => void;
 }

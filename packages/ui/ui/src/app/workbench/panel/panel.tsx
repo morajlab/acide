@@ -1,10 +1,10 @@
 import React from 'react';
-import { getBEMElement, prefixClaName } from 'mo/common/className';
-import { IPanel, IPanelItem } from 'mo/model/workbench/panel';
-import { IPanelController } from 'mo/controller/panel';
-import { Tabs } from 'mo/components/tabs';
-import { ActionBar } from 'mo/components/actionBar';
-import { Scrollable } from 'mo/components';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
+import { IPanel, IPanelItem } from '@acide/ui/app/model/workbench/panel';
+import { IPanelController } from '@acide/ui/app/controller/panel';
+import { Tabs } from '@acide/ui/app/components/tabs';
+import { ActionBar } from '@acide/ui/app/components/actionBar';
+import { Scrollable } from '@acide/ui/app/components';
 
 const defaultClassName = prefixClaName('panel');
 const panelHeaderClassName = getBEMElement(defaultClassName, 'header');

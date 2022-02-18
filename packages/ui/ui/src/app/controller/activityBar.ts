@@ -1,10 +1,13 @@
 import 'reflect-metadata';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
-import { MenuBarController, IMenuBarController } from 'mo/controller';
-import { IMenuItemProps } from 'mo/components/menu';
-import { ActivityBarEvent, IActivityBarItem } from 'mo/model';
-import { SelectColorThemeAction } from 'mo/monaco/selectColorThemeAction';
+import {
+  MenuBarController,
+  IMenuBarController,
+} from '@acide/ui/app/controller';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
+import { ActivityBarEvent, IActivityBarItem } from '@acide/ui/app/model';
+import { SelectColorThemeAction } from '@acide/ui/app/monaco/selectColorThemeAction';
 
 import {
   ActivityBarService,
@@ -13,10 +16,13 @@ import {
   IBuiltinService,
   ISettingsService,
   SettingsService,
-} from 'mo/services';
-import { CommandQuickAccessViewAction } from 'mo/monaco/quickAccessViewAction';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/services';
+import { CommandQuickAccessViewAction } from '@acide/ui/app/monaco/quickAccessViewAction';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IActivityBarController extends Partial<Controller> {
   /**

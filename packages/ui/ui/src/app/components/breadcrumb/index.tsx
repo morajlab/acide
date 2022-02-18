@@ -1,13 +1,13 @@
 import React from 'react';
-import { classNames } from 'mo/common/className';
-import { Icon } from 'mo/components';
-import type { UniqueId, HTMLElementProps } from 'mo/common/types';
+import { classNames } from '@acide/ui/app/common/className';
+import { Icon } from '@acide/ui/app/components';
+import type { UniqueId, HTMLElementProps } from '@acide/ui/app/common/types';
 import {
   defaultBreadcrumbClassName,
   breadcrumbItemClassName,
   breadcrumbLabelClassName,
 } from './base';
-import { getDataAttributionsFromProps } from 'mo/common/dom';
+import { getDataAttributionsFromProps } from '@acide/ui/app/common/dom';
 
 export interface IBreadcrumbItemProps extends HTMLElementProps {
   id: UniqueId;

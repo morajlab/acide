@@ -2,7 +2,7 @@ import {
   getBEMElement,
   getBEMModifier,
   prefixClaName,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 import { ConfrimType, ConfirmState } from './';
 
 export const modalClassName = prefixClaName('modal');

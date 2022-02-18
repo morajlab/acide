@@ -1,19 +1,22 @@
 import 'reflect-metadata';
 import { container, singleton } from 'tsyringe';
 import React from 'react';
-import { IActionBarItemProps } from 'mo/components/actionBar';
-import { Controller } from 'mo/react/controller';
-import { PanelEvent } from 'mo/model/workbench/panel';
+import { IActionBarItemProps } from '@acide/ui/app/components/actionBar';
+import { Controller } from '@acide/ui/app/react/controller';
+import { PanelEvent } from '@acide/ui/app/model/workbench/panel';
 import {
   BuiltinService,
   IBuiltinService,
   IPanelService,
   PanelService,
-} from 'mo/services';
-import { IMonacoService, MonacoService } from 'mo/monaco/monacoService';
-import { QuickTogglePanelAction } from 'mo/monaco/quickTogglePanelAction';
-import Output from 'mo/workbench/panel/output';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/services';
+import {
+  IMonacoService,
+  MonacoService,
+} from '@acide/ui/app/monaco/monacoService';
+import { QuickTogglePanelAction } from '@acide/ui/app/monaco/quickTogglePanelAction';
+import Output from '@acide/ui/app/workbench/panel/output';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IPanelController extends Partial<Controller> {
   onTabChange?(key: UniqueId): void;

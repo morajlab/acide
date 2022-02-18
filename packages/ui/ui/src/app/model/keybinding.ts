@@ -1,4 +1,4 @@
-import { KeyCode } from 'mo/monaco';
+import { KeyCode } from '@acide/ui/app/monaco';
 
 export const KeyCodeString: Partial<{ [key in KeyCode]: string }> = {
   [KeyCode.Unknown]: '',

@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { container } from 'tsyringe';
 import React, { Component } from 'react';
-import Logger from 'mo/common/logger';
+import Logger from '@acide/ui/app/common/logger';
 import { IComponent } from './component';
 import { Controller } from './controller';
 

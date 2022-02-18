@@ -1,21 +1,25 @@
 import 'reflect-metadata';
 import React from 'react';
-import { Controller } from 'mo/react/controller';
+import { Controller } from '@acide/ui/app/react/controller';
 import { container, singleton } from 'tsyringe';
-import { EditorTreeEvent } from 'mo/model/workbench/explorer/editorTree';
+import { EditorTreeEvent } from '@acide/ui/app/model/workbench/explorer/editorTree';
 import {
   BuiltinService,
   EditorService,
   ExplorerService,
   IBuiltinService,
-} from 'mo/services';
+} from '@acide/ui/app/services';
 import {
   EditorTree,
   IOpenEditProps,
-} from 'mo/workbench/sidebar/explore/editorTree';
-import { connect } from 'mo/react';
-import { IActionBarItemProps, IMenuItemProps, ITabProps } from 'mo/components';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/workbench/sidebar/explore/editorTree';
+import { connect } from '@acide/ui/app/react';
+import {
+  IActionBarItemProps,
+  IMenuItemProps,
+  ITabProps,
+} from '@acide/ui/app/components';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IEditorTreeController extends Partial<Controller> {
   readonly onClose?: (tabId: UniqueId, groupId: UniqueId) => void;

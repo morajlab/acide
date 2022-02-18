@@ -1,21 +1,21 @@
 import 'reflect-metadata';
 import { container, singleton } from 'tsyringe';
 import cloneDeep from 'lodash/cloneDeep';
-import { Controller } from 'mo/react/controller';
-import { IMenuItemProps } from 'mo/components/menu';
+import { Controller } from '@acide/ui/app/react/controller';
+import { IMenuItemProps } from '@acide/ui/app/components/menu';
 import {
   FolderTreeEvent,
   FileTypes,
   FileType,
   IFolderTreeNodeProps,
-} from 'mo/model';
+} from '@acide/ui/app/model';
 import {
   BuiltinService,
   FolderTreeService,
   IBuiltinService,
   IFolderTreeService,
-} from 'mo/services';
-import type { UniqueId } from 'mo/common/types';
+} from '@acide/ui/app/services';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface IFolderTreeController extends Partial<Controller> {
   readonly createTreeNode?: (type: FileType, id?: UniqueId) => void;

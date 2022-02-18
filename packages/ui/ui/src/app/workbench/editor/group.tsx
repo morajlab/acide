@@ -1,7 +1,7 @@
-import { MonacoEditor } from 'mo/components/monaco';
-import { Scrollable } from 'mo/components/scrollable';
-import { Tabs } from 'mo/components/tabs';
-import { IEditorGroup, IEditorOptions } from 'mo/model';
+import { MonacoEditor } from '@acide/ui/app/components/monaco';
+import { Scrollable } from '@acide/ui/app/components/scrollable';
+import { Tabs } from '@acide/ui/app/components/tabs';
+import { IEditorGroup, IEditorOptions } from '@acide/ui/app/model';
 import React, { useRef, useLayoutEffect } from 'react';
 import { memo, useEffect } from 'react';
 import {
@@ -12,12 +12,12 @@ import {
 } from './base';
 import EditorAction from './action';
 import EditorBreadcrumb from './breadcrumb';
-import { IEditorController } from 'mo/controller/editor';
-import { Menu } from 'mo/components/menu';
-import { useContextView } from 'mo/components/contextView';
-import { getEventPosition } from 'mo/common/dom';
+import { IEditorController } from '@acide/ui/app/controller/editor';
+import { Menu } from '@acide/ui/app/components/menu';
+import { useContextView } from '@acide/ui/app/components/contextView';
+import { getEventPosition } from '@acide/ui/app/common/dom';
 import Scrollbar from 'react-scrollbars-custom';
-import { tabItemActiveClassName } from 'mo/components/tabs/tab';
+import { tabItemActiveClassName } from '@acide/ui/app/components/tabs/tab';
 
 export interface IEditorGroupProps extends IEditorGroup {
   currentGroup?: IEditorGroup;

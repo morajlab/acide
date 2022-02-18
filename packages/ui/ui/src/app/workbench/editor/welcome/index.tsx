@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './logo';
-import { prefixClaName } from 'mo/common/className';
+import { prefixClaName } from '@acide/ui/app/common/className';
 import { useGetKeys } from './hooks';
 
 export default function Welcome() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Icon } from 'mo/components/icon';
+import { Icon } from '@acide/ui/app/components/icon';
 import { IModalFuncProps, destroyFns } from './modal';
 import ConfirmDialog from './confirmDialog';
 

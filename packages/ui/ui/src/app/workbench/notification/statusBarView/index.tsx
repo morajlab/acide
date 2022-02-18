@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
-import { Icon } from 'mo/components/icon';
-import type { INotification } from 'mo/model';
+import { Icon } from '@acide/ui/app/components/icon';
+import type { INotification } from '@acide/ui/app/model';
 import { NotificationPane } from '../notificationPane';
-import type { INotificationController } from 'mo/controller';
+import type { INotificationController } from '@acide/ui/app/controller';
 
 export function NotificationStatusBarView(
   props: INotification & Partial<INotificationController>

@@ -1,13 +1,16 @@
 import React from 'react';
 import { useCallback } from 'react';
-import { IActivityMenuItemProps } from 'mo/model';
-import { IMenuItemProps, Menu } from 'mo/components/menu';
-import { ID_ACTIVITY_BAR } from 'mo/common/id';
-import { IActivityBar, IActivityBarItem } from 'mo/model/workbench/activityBar';
+import { IActivityMenuItemProps } from '@acide/ui/app/model';
+import { IMenuItemProps, Menu } from '@acide/ui/app/components/menu';
+import { ID_ACTIVITY_BAR } from '@acide/ui/app/common/id';
+import {
+  IActivityBar,
+  IActivityBarItem,
+} from '@acide/ui/app/model/workbench/activityBar';
 
 import { ActivityBarItem } from './activityBarItem';
-import { Scrollable } from 'mo/components/scrollable';
-import { IActivityBarController } from 'mo/controller/activityBar';
+import { Scrollable } from '@acide/ui/app/components/scrollable';
+import { IActivityBarController } from '@acide/ui/app/controller/activityBar';
 
 import {
   containerClassName,
@@ -16,8 +19,8 @@ import {
   itemClassName,
   normalItemsClassName,
 } from './base';
-import { useContextView } from 'mo/components';
-import { UniqueId } from 'mo/common/types';
+import { useContextView } from '@acide/ui/app/components';
+import { UniqueId } from '@acide/ui/app/common/types';
 
 export function ActivityBar(props: IActivityBar & IActivityBarController) {
   const {

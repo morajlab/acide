@@ -1,4 +1,4 @@
-import { Button } from 'mo/components';
+import { Button } from '@acide/ui/app/components';
 import React, { useCallback, useEffect, useRef } from 'react';
 
 interface ILocaleNotificationProps {

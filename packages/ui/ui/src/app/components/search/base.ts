@@ -1,4 +1,4 @@
-import { getBEMElement, prefixClaName } from 'mo/common/className';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
 
 export const defaultSearchClassName = prefixClaName('search');
 

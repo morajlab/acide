@@ -1,21 +1,21 @@
 import 'reflect-metadata';
 import React, { memo, useRef, useEffect, useLayoutEffect } from 'react';
-import { IFolderTree, IFolderTreeNodeProps } from 'mo/model';
-import { select, getEventPosition } from 'mo/common/dom';
-import Tree from 'mo/components/tree';
-import { IMenuItemProps, Menu } from 'mo/components/menu';
-import { Button } from 'mo/components/button';
-import type { IFolderTreeController } from 'mo/controller/explorer/folderTree';
-import { useContextView } from 'mo/components/contextView';
-import { useContextMenu } from 'mo/components/contextMenu';
+import { IFolderTree, IFolderTreeNodeProps } from '@acide/ui/app/model';
+import { select, getEventPosition } from '@acide/ui/app/common/dom';
+import Tree from '@acide/ui/app/components/tree';
+import { IMenuItemProps, Menu } from '@acide/ui/app/components/menu';
+import { Button } from '@acide/ui/app/components/button';
+import type { IFolderTreeController } from '@acide/ui/app/controller/explorer/folderTree';
+import { useContextView } from '@acide/ui/app/components/contextView';
+import { useContextMenu } from '@acide/ui/app/components/contextMenu';
 import {
   folderTreeClassName,
   folderTreeEditClassName,
   folderTreeInputClassName,
 } from './base';
-import { classNames } from 'mo/common/className';
-import { Scrollable } from 'mo/components';
-import { ICollapseItem } from 'mo/components/collapse';
+import { classNames } from '@acide/ui/app/common/className';
+import { Scrollable } from '@acide/ui/app/components';
+import { ICollapseItem } from '@acide/ui/app/components/collapse';
 
 export interface IFolderTreeProps extends IFolderTreeController, IFolderTree {
   panel: ICollapseItem;

@@ -1,5 +1,5 @@
 import { cloneDeep } from 'lodash';
-import { EventEmitter, GlobalEvent } from 'mo/common/event';
+import { EventEmitter, GlobalEvent } from '@acide/ui/app/common/event';
 
 export enum ComponentEvents {
   Update = 'Component.Update',

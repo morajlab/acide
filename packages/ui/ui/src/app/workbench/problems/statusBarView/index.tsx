@@ -1,6 +1,6 @@
 import React from 'react';
-import { Icon } from 'mo/components/icon';
-import { IStatusBarItem } from 'mo/model/workbench/statusBar';
+import { Icon } from '@acide/ui/app/components/icon';
+import { IStatusBarItem } from '@acide/ui/app/model/workbench/statusBar';
 
 export function ProblemsStatusBarView(props: IStatusBarItem) {
   const { data = { errors: 0, warnings: 0, infos: 0 } } = props;

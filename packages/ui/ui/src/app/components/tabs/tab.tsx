@@ -8,10 +8,10 @@ import {
   getBEMElement,
   getBEMModifier,
   prefixClaName,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 import TabExtra from './tabExtra';
 import { Icon } from '../icon';
-import type { UniqueId } from 'mo/common/types';
+import type { UniqueId } from '@acide/ui/app/common/types';
 
 export interface ITabEvent {
   onDrag?: (

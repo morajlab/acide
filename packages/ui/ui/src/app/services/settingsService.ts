@@ -1,19 +1,23 @@
 import 'reflect-metadata';
-import { ISettings, SettingsEvent, SettingsModel } from 'mo/model/settings';
+import {
+  ISettings,
+  SettingsEvent,
+  SettingsModel,
+} from '@acide/ui/app/model/settings';
 import { singleton, container } from 'tsyringe';
 import {
   flatObject,
   mergeObjects,
   normalizeFlattedObject,
-} from 'mo/common/utils';
+} from '@acide/ui/app/common/utils';
 import { EditorService, IEditorService } from './workbench';
-import { GlobalEvent } from 'mo/common/event';
-import { IEditorTab } from 'mo/model';
+import { GlobalEvent } from '@acide/ui/app/common/event';
+import { IEditorTab } from '@acide/ui/app/model';
 import {
   ColorThemeService,
   IColorThemeService,
 } from './theme/colorThemeService';
-import { ILocaleService, LocaleService } from 'mo/i18n';
+import { ILocaleService, LocaleService } from '@acide/ui/app/i18n';
 import { cloneDeep, isEqual } from 'lodash';
 import { modules } from './builtinService/const';
 import { BuiltinService, IBuiltinService } from './builtinService';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { memo } from 'react';
-import { getBEMElement, prefixClaName } from 'mo/common/className';
-import { ISidebar, ISidebarPane } from 'mo/model/workbench/sidebar';
+import { getBEMElement, prefixClaName } from '@acide/ui/app/common/className';
+import { ISidebar, ISidebarPane } from '@acide/ui/app/model/workbench/sidebar';
 
 export interface IHeaderProps {
   title: React.ReactNode;

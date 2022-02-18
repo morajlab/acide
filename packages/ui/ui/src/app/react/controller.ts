@@ -1,4 +1,4 @@
-import { GlobalEvent } from 'mo/common/event';
+import { GlobalEvent } from '@acide/ui/app/common/event';
 
 export abstract class Controller extends GlobalEvent {
   public abstract initView(): void;

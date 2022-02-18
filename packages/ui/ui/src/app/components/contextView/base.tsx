@@ -2,7 +2,7 @@ import {
   prefixClaName,
   getBEMElement,
   getBEMModifier,
-} from 'mo/common/className';
+} from '@acide/ui/app/common/className';
 
 export const contextViewClass = prefixClaName('context-view');
 
